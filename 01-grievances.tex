@@ -1,0 +1,158 @@
+
+\chapter{Design as a reaction to CDCS}
+
+Improvements were made by USING CDCS, (bottom-up, not top-down)!
+
+%%%
+
+\section{Modernity}
+
+CDCS is an old system.
+
+\subsection{GET requests vs. AJAX}
+
+- Can use back button
+- Can send a link to a course or search
+
+\subsection{Built-in scheduler vs. browser extension}
+
+- Better UX
+- Data is centralized
+
+\subsection{Mobile}
+
+- Important nowadays
+- Mobile traffic stat or smth
+
+\subsection{Public API}
+
+- Important nowadays, extends student possibility
+- JSON
+- Brief demo of API
+
+%%%
+
+\section{Usability}
+
+\subsection{Data quality}
+
+- Courses don't shout
+- Typos in comments
+- 12-hour time
+
+\subsection{Section display}
+
+- Grouped course sections
+- Embedded labs (A/B too), workshops, \& recitations
+
+\subsection{Course reference}
+
+- Clickable/hoverable course links, professor searches
+
+\subsection{Multiple schedule support}
+
+- Old CDCS+betterCDCS system can't keep track of this, have conflicts when adding stuff
+
+\subsection{Exporting to GCal, .ics, image}
+
+- Mobile sync support
+- Security: BetterCDCS export gcal is currently broken and sends netID in PLAINTEXT over http(!!!)
+
+\subsection{Search}
+
+Most important usability concern is finding courses.
+
+%%%
+
+\section{Search}
+
+Use cases, natural language.
+
+\subsection{Course selection criteria}
+
+Narrowed it down to three criteria. Keep in mind that \emph{none} of the things listed below are supported by CDCS, and they are all supported by Skedge.
+
+  \subsubsection{Requirements}
+
+  - Finding crosslists
+  - Clusters
+
+  \subsubsection{Browsing}
+
+  - ``New'' courses
+  - ``Autofit'' search
+  - Random
+  - Sorts
+
+  \subsubsection{Friends}
+
+  - ``What are my friends taking?'' (``what are you taking this semester'' = probably most common smalltalk phrase uttered on campus)
+  - ``What do my friends recommend?'' - ``have you taken this class, and if so, what did you think of it?''
+
+\subsection{Natural language search}
+
+%Figure
+
+See figure.
+
+  \subsubsection{Advantages}
+
+  - 15 fields reduced to 1
+
+  vs form entry:
+  - Faster
+  - More intuitive
+  - More easily extendable
+
+  \subsubsection{Disadvantages}
+
+  Having to know the DSL, grammar ambiguities (can be solved with a `did you mean')
+
+\subsection{Multipurpose}
+
+Used by other links (instructors, course references) around the site
+
+\subsection{Added features}
+
+- CRN (!)
+- Crosslist
+- Class size
+
+%%%
+
+\section{Social}
+
+\subsection{The issue}
+
+  \subsubsection{Static image vs. live site}
+
+  - Edits don’t update
+  - Referencing courses
+
+  \subsubsection{Finding common courses}
+
+  - requires your friends to share their schedules on FB publicly and you to see their post
+  - is schedule-first, not search-first
+  - typically only occurs for the current semester
+
+%figure
+
+\subsection{Skedge Social}
+
+% Walkthru
+
+  \subsubsection{Friends' course enrollments}
+
+  Mini-feed
+
+  \subsubsection{Friends' course likes}
+
+  \subsubsection{Likes \& enrollments embedded in results}
+
+  \subsubsection{Personal schedule synchronization}
+
+  \subsubsection{Privacy}
+
+  \subsubsection{Notifications}
+
+  %figs of the 2 types

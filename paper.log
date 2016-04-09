@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.24)  9 APR 2016 02:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.24)  9 APR 2016 03:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -554,24 +554,24 @@ Package: geometry 2010/09/12 v5.6 Page Geometry
 \Gm@layoutvoffset=\dimen145
 \Gm@dimlist=\toks25
 )
-(./paper.aux (./01-introduction.aux) (./02-grievances.aux) (./03-analytics.aux)
-(./04-conclusion.aux))
+(./paper.aux (./introduction.aux) (./01-grievances.aux) (./02-tech.aux)
+(./03-analytics.aux) (./04-future.aux) (./conclusion.aux))
 \openout1 = `paper.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 49.
-LaTeX Font Info:    ... okay on input line 49.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
 
 (/usr/local/texlive/2015basic/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -606,7 +606,7 @@ Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box33
-Package hyperref Info: Link coloring OFF on input line 49.
+Package hyperref Info: Link coloring OFF on input line 43.
  (/usr/local/texlive/2015basic/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
@@ -616,9 +616,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count136
 )
-LaTeX Info: Redefining \ref on input line 49.
-LaTeX Info: Redefining \pageref on input line 49.
-LaTeX Info: Redefining \nameref on input line 49.
+LaTeX Info: Redefining \ref on input line 43.
+LaTeX Info: Redefining \pageref on input line 43.
+LaTeX Info: Redefining \nameref on input line 43.
  (./paper.out) (./paper.out)
 \@outlinefile=\write3
 \openout3 = `paper.out'.
@@ -666,7 +666,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.52 
+l.46 
      
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -679,7 +679,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.52 
+l.46 
      
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -687,29 +687,43 @@ or  <return>  to continue without it.
 
 [1
 
-{/usr/local/texlive/2015basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]pdf
-TeX warning (ext4): destination with the same identifier (name{page.1}) has bee
-n already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.65 \end{abstract}
-                    [1] (./paper.toc)
+{/usr/local/texlive/2015basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+(./paper.toc)
 \tf@toc=\write4
 \openout4 = `paper.toc'.
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
+ [1
+
+] (./paper.lot)
+\tf@lot=\write5
+\openout5 = `paper.lot'.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.69 \include{01-introduction}
-                               [1
+l.57 \listoffigures
+                    [2
+
+] (./paper.lof)
+\tf@lof=\write6
+\openout6 = `paper.lof'.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.59 \clearpage
+                [3
+
+] [1
 
 ]
-\openout2 = `01-introduction.aux'.
+\openout2 = `introduction.aux'.
 
- (./01-introduction.tex
+ (./introduction.tex
 Chapter 1.
-<images/cdcs.png, id=55, 1245.65375pt x 904.37875pt>
+<images/cdcs.png, id=157, 1245.65375pt x 904.37875pt>
 File: images/cdcs.png Graphic file (type png)
  <use images/cdcs.png>
 Package pdftex.def Info: images/cdcs.png used on input line 17.
@@ -728,7 +742,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-<images/skedge.png, id=57, 1444.39626pt x 803.0pt>
+<images/skedge.png, id=159, 1444.39626pt x 803.0pt>
 File: images/skedge.png Graphic file (type png)
  <use images/skedge.png>
 Package pdftex.def Info: images/skedge.png used on input line 22.
@@ -738,15 +752,31 @@ Overfull \hbox (11.66562pt too wide) in paragraph at lines 20--24
  []$[]$ 
  []
 
-) [2
+)pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.82 \include{introduction}
+                            [1
 
 
-] [3 <./images/cdcs.png> <./images/skedge.png>]
-\openout2 = `02-grievances.aux'.
+] [2 <./images/cdcs.png> <./images/skedge.png>]
+\openout2 = `01-grievances.aux'.
 
- (./02-grievances.tex
+
+(./01-grievances.tex
 Chapter 2.
-) [4
+[3
+
+
+
+
+] [4] [5]) [6]
+\openout2 = `02-tech.aux'.
+
+ (./02-tech.tex
+Chapter 3.
+) [7
 
 
 
@@ -755,55 +785,137 @@ Chapter 2.
 \openout2 = `03-analytics.aux'.
 
  (./03-analytics.tex
-Chapter 3.
-) [5
-
-
-
-
-]
-\openout2 = `04-conclusion.aux'.
-
- (./04-conclusion.tex
 Chapter 4.
-) [6
+[8
 
 
 
 
-] [7
+] [9]
+
+! Package inputenc Error: Unicode char \u8:→ not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.110 “CSC” →
+                    0
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:→ not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.111 “MTH 165” →
+                        0
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:→ not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.112 “taught by hema” →
+                               1   ✓    (2 searches)
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:✓ not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.112 “taught by hema” → 1   ✓
+                                          (2 searches)
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:→ not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.113 “random mur 1-2 credits” →
+                                       2   ✓    (1 search)
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! Package inputenc Error: Unicode char \u8:✓ not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.113 “random mur 1-2 credits” → 2   ✓
+                                                  (1 search)
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+) [10]
+\openout2 = `04-future.aux'.
+
+ (./04-future.tex
+Chapter 5.
+) [11
+
 
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 108.
- [8
+\openout2 = `conclusion.aux'.
+
+ (./conclusion.tex
+Chapter 6.
+) [12
+
+
+
+
+] [13
+
+
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 108.
- (./paper.aux (./01-introduction.aux) (./02-grievances.aux)
-(./03-analytics.aux) (./04-conclusion.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 108.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 108.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 127.
+ [14
 
-
-Package rerunfilecheck Warning: File `paper.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `paper.out':
-(rerunfilecheck)             Before: CAEB9D4D451E7B30D7A11DF8A2130C10;353
-(rerunfilecheck)             After:  0941CFC4E4586BEDB335FBCFAA711BC6;354.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 108.
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 127.
+ (./paper.aux (./introduction.aux) (./01-grievances.aux)
+(./02-tech.aux) (./03-analytics.aux) (./04-future.aux) (./conclusion.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 127.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 127.
+Package rerunfilecheck Info: File `paper.out' has not changed.
+(rerunfilecheck)             Checksum: 86F1A2E0B6F95E915FA6F191AADEF7A6;1434.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 127.
  ) 
 Here is how much of TeX's memory you used:
- 9381 strings out of 494501
- 141222 string characters out of 6167029
- 233329 words of memory out of 5000000
- 12509 multiletter control sequences out of 15000+600000
+ 9495 strings out of 494501
+ 142537 string characters out of 6167029
+ 237227 words of memory out of 5000000
+ 12532 multiletter control sequences out of 15000+600000
  11056 words of font info for 40 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 42i,7n,40p,889b,403s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,7n,40p,889b,405s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx1
 0.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mbx12.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/
@@ -811,10 +923,10 @@ cm/cmr10.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmr12.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmti10.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmtt10.pfb>
-Output written on paper.pdf (10 pages, 344194 bytes).
+Output written on paper.pdf (19 pages, 364367 bytes).
 PDF statistics:
- 137 PDF objects out of 1000 (max. 8388607)
- 113 compressed objects within 2 object streams
- 26 named destinations out of 1000 (max. 500000)
- 67 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 326 PDF objects out of 1000 (max. 8388607)
+ 292 compressed objects within 3 object streams
+ 97 named destinations out of 1000 (max. 500000)
+ 211 words of extra memory for PDF output out of 10000 (max. 10000000)
 
