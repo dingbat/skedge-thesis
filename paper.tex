@@ -1,4 +1,4 @@
-\documentclass[titlepage]{article}
+\documentclass[titlepage]{report}
 
 \usepackage{setspace}
 
@@ -64,39 +64,13 @@ In this paper I present Skedge, a web application for students to comfortably an
 
 \end{abstract}
 
-\begin{figure}[ht]
-    \centering
-    \begin{tabular}{c c}
-        \begin{subfigure}[h]{6.5cm}
-            \centering
-            \includegraphics[width=1.00\textwidth]{images/cdcs}
-        \end{subfigure}
-        \hspace{1em}
-        \begin{subfigure}[h]{7.5cm}
-            \centering
-            \includegraphics[width=1.00\textwidth]{images/skedge}
-        \end{subfigure}
-    \end{tabular}
-    \caption{CDCS (left) and Skedge (right) for the search query {\tt csc}.}
-\end{figure}
+\tableofcontents
 
-\section{Introduction}
+\include{01-introduction}
 
-This paper\cite{escodegen} will begin by discussing Markov chains and how we set out to use them for our goal of creating an assistive program editor. We will then describe in detail how we implemented a Markov chain to house program syntax trees, how we were able to generate code using it, and finally we'll discuss our results and address the limitations of our product.
+\clearpage
 
-\subsection{Markov chain}
-
-A Markov chain is a mathematical system that undergoes a stochastic process whereby
-
-
-\subsection*{Source code \& live site}
-
-The source code for Skedge is available online under an open
-source license:
-\url{https://github.com/RocHack/skedge}.\\
-
-\noindent The site can be found at
-\url{http://skedgeur.com}.
+\include{04-conclusion}
 
 \clearpage
 

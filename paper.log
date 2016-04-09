@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.24)  9 APR 2016 02:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.24)  9 APR 2016 02:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -6,19 +6,20 @@ entering extended mode
 (/Users/dan/college/thesis/paper.tex
 LaTeX2e <2015/01/01>
 Babel <3.9l> and hyphenation patterns for 21 languages loaded.
-(/usr/local/texlive/2015basic/texmf-dist/tex/latex/base/article.cls
-Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2015basic/texmf-dist/tex/latex/base/report.cls
+Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
 (/usr/local/texlive/2015basic/texmf-dist/tex/latex/base/size10.clo
 File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
-\c@section=\count80
-\c@subsection=\count81
-\c@subsubsection=\count82
-\c@paragraph=\count83
-\c@subparagraph=\count84
-\c@figure=\count85
-\c@table=\count86
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
@@ -263,13 +264,13 @@ Package: amsbsy 1999/11/29 v1.2d
 (/usr/local/texlive/2015basic/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count87
+\inf@bad=\count88
 LaTeX Info: Redefining \frac on input line 210.
-\uproot@=\count88
-\leftroot@=\count89
+\uproot@=\count89
+\leftroot@=\count90
 LaTeX Info: Redefining \overline on input line 306.
-\classnum@=\count90
-\DOTSCASE@=\count91
+\classnum@=\count91
+\DOTSCASE@=\count92
 LaTeX Info: Redefining \ldots on input line 378.
 LaTeX Info: Redefining \dots on input line 381.
 LaTeX Info: Redefining \cdots on input line 466.
@@ -278,15 +279,15 @@ LaTeX Info: Redefining \cdots on input line 466.
 \big@size=\dimen105
 LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
-\macc@depth=\count92
-\c@MaxMatrixCols=\count93
+\macc@depth=\count93
+\c@MaxMatrixCols=\count94
 \dotsspace@=\muskip10
-\c@parentequation=\count94
-\dspbrk@lvl=\count95
+\c@parentequation=\count95
+\dspbrk@lvl=\count96
 \tag@help=\toks17
-\row@=\count96
-\column@=\count97
-\maxfields@=\count98
+\row@=\count97
+\column@=\count98
+\maxfields@=\count99
 \andhelp@=\toks18
 \eqnshift@=\dimen106
 \alignsep@=\dimen107
@@ -310,15 +311,15 @@ Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 )
 (/usr/local/texlive/2015basic/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count99
-\calc@Bcount=\count100
+\calc@Acount=\count100
+\calc@Bcount=\count101
 \calc@Adimen=\dimen112
 \calc@Bdimen=\dimen113
 \calc@Askip=\skip46
 \calc@Bskip=\skip47
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count101
+\calc@Ccount=\count102
 \calc@Cskip=\skip48
 )
 (/usr/local/texlive/2015basic/texmf-dist/tex/latex/mathtools/mhsetup.sty
@@ -328,7 +329,7 @@ LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
-\g_MT_multlinerow_int=\count102
+\g_MT_multlinerow_int=\count103
 \l_MT_multwidth_dim=\dimen114
 \origjot=\skip49
 \l_MT_shortvdotswithinadjustabove_dim=\dimen115
@@ -361,7 +362,7 @@ Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 (/usr/local/texlive/2015basic/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
-\Gread@gobject=\count103
+\Gread@gobject=\count104
 ))
 \Gin@req@height=\dimen121
 \Gin@req@width=\dimen122
@@ -383,14 +384,14 @@ Package caption3 Info: TeX engine: e-TeX on input line 57.
 \caption@parindent=\dimen128
 \caption@hangindent=\dimen129
 )
-\c@ContinuedFloat=\count104
+\c@ContinuedFloat=\count105
 )
-\c@subfigure=\count105
-\c@subtable=\count106
+\c@subfigure=\count106
+\c@subtable=\count107
 )
 (/usr/local/texlive/2015basic/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count107
+\c@float@type=\count108
 \float@exts=\toks22
 \float@box=\box28
 \@float@everytoks=\toks23
@@ -455,15 +456,15 @@ Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
 \@linkdim=\dimen130
-\Hy@linkcounter=\count108
-\Hy@pagecounter=\count109
+\Hy@linkcounter=\count109
+\Hy@pagecounter=\count110
 
 (/usr/local/texlive/2015basic/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count110
+\Hy@SavedSpaceFactor=\count111
 
 (/usr/local/texlive/2015basic/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -475,7 +476,7 @@ Package hyperref Info: Plain pages OFF on input line 4458.
 Package hyperref Info: Backreferencing OFF on input line 4463.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
-\c@Hy@tempcnt=\count111
+\c@Hy@tempcnt=\count112
 
 (/usr/local/texlive/2015basic/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
@@ -483,7 +484,7 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5041.
 \XeTeXLinkMargin=\dimen131
-\Fld@menulength=\count112
+\Fld@menulength=\count113
 \Field@Width=\dimen132
 \Fld@charsize=\dimen133
 Package hyperref Info: Hyper figures OFF on input line 6295.
@@ -495,17 +496,17 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6320.
 Package hyperref Info: PDF/A mode OFF on input line 6325.
 LaTeX Info: Redefining \ref on input line 6365.
 LaTeX Info: Redefining \pageref on input line 6369.
-\Hy@abspage=\count113
-\c@Item=\count114
-\c@Hfootnote=\count115
+\Hy@abspage=\count114
+\c@Item=\count115
+\c@Hfootnote=\count116
 )
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
 (/usr/local/texlive/2015basic/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
-\Fld@listcount=\count116
-\c@bookmark@seq@number=\count117
+\Fld@listcount=\count117
+\c@bookmark@seq@number=\count118
 
 (/usr/local/texlive/2015basic/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
@@ -514,23 +515,23 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip50
 ) (/usr/local/texlive/2015basic/texmf-dist/tex/latex/listings/listings.sty
-\lst@mode=\count118
+\lst@mode=\count119
 \lst@gtempboxa=\box30
 \lst@token=\toks24
-\lst@length=\count119
+\lst@length=\count120
 \lst@currlwidth=\dimen134
-\lst@column=\count120
-\lst@pos=\count121
+\lst@column=\count121
+\lst@pos=\count122
 \lst@lostspace=\dimen135
 \lst@width=\dimen136
-\lst@newlines=\count122
-\lst@lineno=\count123
+\lst@newlines=\count123
+\lst@lineno=\count124
 \lst@maxwidth=\dimen137
 
 (/usr/local/texlive/2015basic/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
-\c@lstnumber=\count124
-\lst@skipnumbers=\count125
+\c@lstnumber=\count125
+\lst@skipnumbers=\count126
 \lst@framebox=\box31
 )
 (/usr/local/texlive/2015basic/texmf-dist/tex/latex/listings/listings.cfg
@@ -540,9 +541,9 @@ Package: listings 2014/09/06 1.5e (Carsten Heinz)
 
 (/usr/local/texlive/2015basic/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
-\Gm@cnth=\count126
-\Gm@cntv=\count127
-\c@Gm@tempcnt=\count128
+\Gm@cnth=\count127
+\Gm@cntv=\count128
+\c@Gm@tempcnt=\count129
 \Gm@bindingoffset=\dimen138
 \Gm@wd@mp=\dimen139
 \Gm@odd@mp=\dimen140
@@ -553,7 +554,7 @@ Package: geometry 2010/09/12 v5.6 Page Geometry
 \Gm@layoutvoffset=\dimen145
 \Gm@dimlist=\toks25
 )
-(./paper.aux)
+(./paper.aux (./01-introduction.aux) (./04-conclusion.aux))
 \openout1 = `paper.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 49.
@@ -573,16 +574,16 @@ LaTeX Font Info:    ... okay on input line 49.
 
 (/usr/local/texlive/2015basic/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count129
+\scratchcounter=\count130
 \scratchdimen=\dimen146
 \scratchbox=\box32
-\nofMPsegments=\count130
-\nofMParguments=\count131
+\nofMPsegments=\count131
+\nofMParguments=\count132
 \everyMPshowfont=\toks26
-\MPscratchCnt=\count132
+\MPscratchCnt=\count133
 \MPscratchDim=\dimen147
-\MPnumerator=\count133
-\makeMPintoPDFobject=\count134
+\MPnumerator=\count134
+\makeMPintoPDFobject=\count135
 \everyMPtoPDFconversion=\toks27
 ) (/usr/local/texlive/2015basic/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
@@ -612,7 +613,7 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 y
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count135
+\c@section@level=\count136
 )
 LaTeX Info: Redefining \ref on input line 49.
 LaTeX Info: Redefining \pageref on input line 49.
@@ -621,7 +622,7 @@ LaTeX Info: Redefining \nameref on input line 49.
 \@outlinefile=\write3
 \openout3 = `paper.out'.
 
-\c@lstlisting=\count136
+\c@lstlisting=\count137
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -691,57 +692,87 @@ n already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.65 \end{abstract}
-                    [1] <images/cdcs.png, id=24, 1245.65375pt x 860.21375pt>
-File: images/cdcs.png Graphic file (type png)
-
-<use images/cdcs.png>
-Package pdftex.def Info: images/cdcs.png used on input line 72.
-(pdftex.def)             Requested size: 184.9429pt x 127.71391pt.
- <images/skedge.png, id=26, 1444.39626pt x 803.0pt>
-File: images/skedge.png Graphic file (type png)
-
-<use images/skedge.png>
-Package pdftex.def Info: images/skedge.png used on input line 77.
-(pdftex.def)             Requested size: 213.39566pt x 118.6314pt.
-
-Overfull \hbox (11.87952pt too wide) in paragraph at lines 69--80
- [][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 94--97
-
- []
+                    [1] (./paper.toc)
+\tf@toc=\write4
+\openout4 = `paper.toc'.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.101 \clearpage
-                 [1 <./images/cdcs.png> <./images/skedge.png>] [2
+l.69 \include{01-introduction}
+                               [1
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 128.
- [3
+\openout2 = `01-introduction.aux'.
+
+ (./01-introduction.tex
+Chapter 1.
+<images/cdcs.png, id=35, 1245.65375pt x 904.37875pt>
+File: images/cdcs.png Graphic file (type png)
+ <use images/cdcs.png>
+Package pdftex.def Info: images/cdcs.png used on input line 17.
+(pdftex.def)             Requested size: 398.33858pt x 289.20012pt.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19         \vspace{20pt}\\
+                            
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+<images/skedge.png, id=37, 1444.39626pt x 803.0pt>
+File: images/skedge.png Graphic file (type png)
+ <use images/skedge.png>
+Package pdftex.def Info: images/skedge.png used on input line 22.
+(pdftex.def)             Requested size: 426.79134pt x 237.26279pt.
+
+Overfull \hbox (11.66562pt too wide) in paragraph at lines 20--24
+ []$[]$ 
+ []
+
+) [2
+
+
+] [3 <./images/cdcs.png> <./images/skedge.png>]
+\openout2 = `04-conclusion.aux'.
+
+ (./04-conclusion.tex)
+[4
+
+
+
+] [5
+
+
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 128.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 102.
+ [6
 
-(./paper.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 128.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 128.
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 102.
+ (./paper.aux (./01-introduction.aux) (./04-conclusion.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 102.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 102.
 Package rerunfilecheck Info: File `paper.out' has not changed.
-(rerunfilecheck)             Checksum: 74680F26FCD3406AAE211B3132799BC1;108.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 128.
+(rerunfilecheck)             Checksum: CD1056EA94ABAD52E3BA4AE4F6C92CAE;170.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 102.
  ) 
 Here is how much of TeX's memory you used:
- 9313 strings out of 494501
- 140286 string characters out of 6167029
- 232049 words of memory out of 5000000
- 12483 multiletter control sequences out of 15000+600000
- 9844 words of font info for 36 fonts, out of 8000000 for 9000
+ 9356 strings out of 494501
+ 140872 string characters out of 6167029
+ 232439 words of memory out of 5000000
+ 12503 multiletter control sequences out of 15000+600000
+ 11056 words of font info for 40 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 42i,13n,40p,889b,489s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,7n,40p,889b,403s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx1
 0.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mbx12.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/
@@ -749,10 +780,10 @@ cm/cmr10.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmr12.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmti10.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmtt10.pfb>
-Output written on paper.pdf (5 pages, 351655 bytes).
+Output written on paper.pdf (8 pages, 339813 bytes).
 PDF statistics:
- 86 PDF objects out of 1000 (max. 8388607)
- 68 compressed objects within 1 object stream
- 15 named destinations out of 1000 (max. 500000)
- 27 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 108 PDF objects out of 1000 (max. 8388607)
+ 87 compressed objects within 1 object stream
+ 21 named destinations out of 1000 (max. 500000)
+ 35 words of extra memory for PDF output out of 10000 (max. 10000000)
 
