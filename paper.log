@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.24)  9 APR 2016 02:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.24)  9 APR 2016 02:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -691,137 +691,68 @@ n already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.65 \end{abstract}
-                    [1] <cdcs.png, id=112, 1245.65375pt x 860.21375pt>
-File: cdcs.png Graphic file (type png)
+                    [1] <images/cdcs.png, id=24, 1245.65375pt x 860.21375pt>
+File: images/cdcs.png Graphic file (type png)
 
-<use cdcs.png>
-Package pdftex.def Info: cdcs.png used on input line 72.
+<use images/cdcs.png>
+Package pdftex.def Info: images/cdcs.png used on input line 72.
 (pdftex.def)             Requested size: 184.9429pt x 127.71391pt.
- <skedge.png, id=114, 1444.39626pt x 803.0pt>
-File: skedge.png Graphic file (type png)
- <use skedge.png>
-Package pdftex.def Info: skedge.png used on input line 77.
+ <images/skedge.png, id=26, 1444.39626pt x 803.0pt>
+File: images/skedge.png Graphic file (type png)
+
+<use images/skedge.png>
+Package pdftex.def Info: images/skedge.png used on input line 77.
 (pdftex.def)             Requested size: 213.39566pt x 118.6314pt.
 
 Overfull \hbox (11.87952pt too wide) in paragraph at lines 69--80
  [][] 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--97
+
+ []
+
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.100 
-       [1 <./cdcs.png> <./skedge.png>] [2] [3]
-Overfull \hbox (16.50604pt too wide) in paragraph at lines 184--184
-\OT1/cmr/m/n/10 and $[]([][]\OML/cmm/m/it/10 ; [][]\OT1/cmr/m/n/10 ) = [][]$, $
-[]([][]\OML/cmm/m/it/10 ; [][]\OT1/cmr/m/n/10 ) = [][]$, ..., $[]([][]\OML/cmm/
-m/it/10 ; [][]\OT1/cmr/m/n/10 ) = [][]$,
- []
-
-[4] [5] [6] [7
-
-] [8]
-
-! LaTeX Error: File `vim1' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.297 ...cludegraphics[width=1.00\textwidth]{vim1}
-                                                  
-I could not locate the file with any of these extensions:
-.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: File `vim2' not found.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.302 ...cludegraphics[width=1.00\textwidth]{vim2}
-                                                  
-I could not locate the file with any of these extensions:
-.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPEG,.JBIG2,.JB2,.eps
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-<ide.png, id=183, 1195.46625pt x 702.625pt>
-File: ide.png Graphic file (type png)
- <use ide.png>
-Package pdftex.def Info: ide.png used on input line 332.
-(pdftex.def)             Requested size: 415.12572pt x 243.98189pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[9] [10 <./ide.png>] [11] [12]
-Underfull \hbox (badness 10000) in paragraph at lines 431--434
-
- []
-
-[13] [14
+l.101 \clearpage
+                 [1 <./images/cdcs.png> <./images/skedge.png>] [2
 
 ]
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
-nput line 472.
- (./ast-sample.json) (./model-sample.json)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 128.
+ [3
 
-LaTeX Warning: Float too large for page by 28.99376pt on input line 483.
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 128.
 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 485.
-[15
-
-] [16]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 485.
- (./paper.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 485.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 485.
+(./paper.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 128.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 128.
 Package rerunfilecheck Info: File `paper.out' has not changed.
-(rerunfilecheck)             Checksum: 2A24F8ABCDF89B58B8DA01146FA0ED07;1623.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 485.
+(rerunfilecheck)             Checksum: 74680F26FCD3406AAE211B3132799BC1;108.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 128.
  ) 
 Here is how much of TeX's memory you used:
- 9775 strings out of 494501
- 144835 string characters out of 6167029
- 265633 words of memory out of 5000000
- 12784 multiletter control sequences out of 15000+600000
- 12116 words of font info for 44 fonts, out of 8000000 for 9000
+ 9313 strings out of 494501
+ 140286 string characters out of 6167029
+ 232049 words of memory out of 5000000
+ 12483 multiletter control sequences out of 15000+600000
+ 9844 words of font info for 36 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 42i,15n,40p,1518b,1181s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,13n,40p,889b,489s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx1
 0.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mbx12.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmbx9.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmbxti10.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmex10.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2015basic/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015basic/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015basic/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2015basic/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2015basic/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015basic/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2015basic/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015basi
-c/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015b
-asic/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2
-015basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texliv
-e/2015basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/te
-xlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local
-/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on paper.pdf (18 pages, 596460 bytes).
+cm/cmr10.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr12.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmti10.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmtt10.pfb>
+Output written on paper.pdf (5 pages, 351655 bytes).
 PDF statistics:
- 424 PDF objects out of 1000 (max. 8388607)
- 374 compressed objects within 4 object streams
- 147 named destinations out of 1000 (max. 500000)
- 208 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 86 PDF objects out of 1000 (max. 8388607)
+ 68 compressed objects within 1 object stream
+ 15 named destinations out of 1000 (max. 500000)
+ 27 words of extra memory for PDF output out of 10000 (max. 10000000)
 
