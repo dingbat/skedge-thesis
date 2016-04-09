@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.24)  9 APR 2016 02:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.24)  9 APR 2016 02:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -554,7 +554,8 @@ Package: geometry 2010/09/12 v5.6 Page Geometry
 \Gm@layoutvoffset=\dimen145
 \Gm@dimlist=\toks25
 )
-(./paper.aux (./01-introduction.aux) (./04-conclusion.aux))
+(./paper.aux (./01-introduction.aux) (./02-grievances.aux) (./03-analytics.aux)
+(./04-conclusion.aux))
 \openout1 = `paper.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 49.
@@ -708,7 +709,7 @@ l.69 \include{01-introduction}
 
  (./01-introduction.tex
 Chapter 1.
-<images/cdcs.png, id=35, 1245.65375pt x 904.37875pt>
+<images/cdcs.png, id=55, 1245.65375pt x 904.37875pt>
 File: images/cdcs.png Graphic file (type png)
  <use images/cdcs.png>
 Package pdftex.def Info: images/cdcs.png used on input line 17.
@@ -727,7 +728,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-<images/skedge.png, id=37, 1444.39626pt x 803.0pt>
+<images/skedge.png, id=57, 1444.39626pt x 803.0pt>
 File: images/skedge.png Graphic file (type png)
  <use images/skedge.png>
 Package pdftex.def Info: images/skedge.png used on input line 22.
@@ -741,35 +742,65 @@ Overfull \hbox (11.66562pt too wide) in paragraph at lines 20--24
 
 
 ] [3 <./images/cdcs.png> <./images/skedge.png>]
+\openout2 = `02-grievances.aux'.
+
+ (./02-grievances.tex
+Chapter 2.
+) [4
+
+
+
+
+]
+\openout2 = `03-analytics.aux'.
+
+ (./03-analytics.tex
+Chapter 3.
+) [5
+
+
+
+
+]
 \openout2 = `04-conclusion.aux'.
 
- (./04-conclusion.tex)
-[4
+ (./04-conclusion.tex
+Chapter 4.
+) [6
 
 
 
-] [5
+
+] [7
 
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 102.
- [6
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 108.
+ [8
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 102.
- (./paper.aux (./01-introduction.aux) (./04-conclusion.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 102.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 102.
-Package rerunfilecheck Info: File `paper.out' has not changed.
-(rerunfilecheck)             Checksum: CD1056EA94ABAD52E3BA4AE4F6C92CAE;170.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 102.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 108.
+ (./paper.aux (./01-introduction.aux) (./02-grievances.aux)
+(./03-analytics.aux) (./04-conclusion.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 108.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 108.
+
+
+Package rerunfilecheck Warning: File `paper.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `paper.out':
+(rerunfilecheck)             Before: CAEB9D4D451E7B30D7A11DF8A2130C10;353
+(rerunfilecheck)             After:  0941CFC4E4586BEDB335FBCFAA711BC6;354.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 108.
  ) 
 Here is how much of TeX's memory you used:
- 9356 strings out of 494501
- 140872 string characters out of 6167029
- 232439 words of memory out of 5000000
- 12503 multiletter control sequences out of 15000+600000
+ 9381 strings out of 494501
+ 141222 string characters out of 6167029
+ 233329 words of memory out of 5000000
+ 12509 multiletter control sequences out of 15000+600000
  11056 words of font info for 40 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
  42i,7n,40p,889b,403s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -780,10 +811,10 @@ cm/cmr10.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmr12.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmti10.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public
 /amsfonts/cm/cmtt10.pfb>
-Output written on paper.pdf (8 pages, 339813 bytes).
+Output written on paper.pdf (10 pages, 344194 bytes).
 PDF statistics:
- 108 PDF objects out of 1000 (max. 8388607)
- 87 compressed objects within 1 object stream
- 21 named destinations out of 1000 (max. 500000)
- 35 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 137 PDF objects out of 1000 (max. 8388607)
+ 113 compressed objects within 2 object streams
+ 26 named destinations out of 1000 (max. 500000)
+ 67 words of extra memory for PDF output out of 10000 (max. 10000000)
 
