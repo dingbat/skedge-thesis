@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.24)  9 APR 2016 03:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.12.24)  9 APR 2016 04:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -558,20 +558,20 @@ Package: geometry 2010/09/12 v5.6 Page Geometry
 (./03-analytics.aux) (./04-future.aux) (./conclusion.aux))
 \openout1 = `paper.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 48.
+LaTeX Font Info:    ... okay on input line 48.
 
 (/usr/local/texlive/2015basic/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -606,7 +606,7 @@ Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box33
-Package hyperref Info: Link coloring OFF on input line 43.
+Package hyperref Info: Link coloring OFF on input line 48.
  (/usr/local/texlive/2015basic/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
@@ -616,9 +616,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count136
 )
-LaTeX Info: Redefining \ref on input line 43.
-LaTeX Info: Redefining \pageref on input line 43.
-LaTeX Info: Redefining \nameref on input line 43.
+LaTeX Info: Redefining \ref on input line 48.
+LaTeX Info: Redefining \pageref on input line 48.
+LaTeX Info: Redefining \nameref on input line 48.
  (./paper.out) (./paper.out)
 \@outlinefile=\write3
 \openout3 = `paper.out'.
@@ -666,7 +666,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.46 
+l.51 
      
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -679,7 +679,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.46 
+l.51 
      
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -702,7 +702,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.57 \listoffigures
+l.62 \listoffigures
                     [2
 
 ] (./paper.lof)
@@ -713,7 +713,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.59 \clearpage
+l.64 \clearpage
                 [3
 
 ] [1
@@ -723,7 +723,7 @@ l.59 \clearpage
 
  (./introduction.tex
 Chapter 1.
-<images/cdcs.png, id=157, 1245.65375pt x 904.37875pt>
+<images/cdcs.png, id=158, 1245.65375pt x 904.37875pt>
 File: images/cdcs.png Graphic file (type png)
  <use images/cdcs.png>
 Package pdftex.def Info: images/cdcs.png used on input line 17.
@@ -742,7 +742,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-<images/skedge.png, id=159, 1444.39626pt x 803.0pt>
+<images/skedge.png, id=160, 1444.39626pt x 803.0pt>
 File: images/skedge.png Graphic file (type png)
  <use images/skedge.png>
 Package pdftex.def Info: images/skedge.png used on input line 22.
@@ -756,7 +756,7 @@ Overfull \hbox (11.66562pt too wide) in paragraph at lines 20--24
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.82 \include{introduction}
+l.87 \include{introduction}
                             [1
 
 
@@ -895,25 +895,25 @@ Chapter 6.
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 127.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 118.
  [14
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 127.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 118.
  (./paper.aux (./introduction.aux) (./01-grievances.aux)
 (./02-tech.aux) (./03-analytics.aux) (./04-future.aux) (./conclusion.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 127.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 127.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 118.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 118.
 Package rerunfilecheck Info: File `paper.out' has not changed.
-(rerunfilecheck)             Checksum: 86F1A2E0B6F95E915FA6F191AADEF7A6;1434.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 127.
+(rerunfilecheck)             Checksum: FBAC4E36B2CA46A179E3858E97E1542C;1434.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 118.
  ) 
 Here is how much of TeX's memory you used:
- 9495 strings out of 494501
- 142537 string characters out of 6167029
- 237227 words of memory out of 5000000
- 12532 multiletter control sequences out of 15000+600000
- 11056 words of font info for 40 fonts, out of 8000000 for 9000
+ 9488 strings out of 494501
+ 142449 string characters out of 6167029
+ 237116 words of memory out of 5000000
+ 12528 multiletter control sequences out of 15000+600000
+ 11096 words of font info for 40 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
  42i,7n,40p,889b,405s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx1
@@ -922,11 +922,12 @@ mbx12.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmr10.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmr12.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmti10.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmtt10.pfb>
-Output written on paper.pdf (19 pages, 364367 bytes).
+/amsfonts/cm/cmti12.pfb></usr/local/texlive/2015basic/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmtt10.pfb>
+Output written on paper.pdf (19 pages, 367890 bytes).
 PDF statistics:
- 326 PDF objects out of 1000 (max. 8388607)
- 292 compressed objects within 3 object streams
- 97 named destinations out of 1000 (max. 500000)
+ 321 PDF objects out of 1000 (max. 8388607)
+ 286 compressed objects within 3 object streams
+ 93 named destinations out of 1000 (max. 500000)
  211 words of extra memory for PDF output out of 10000 (max. 10000000)
 

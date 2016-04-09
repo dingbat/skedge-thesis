@@ -41,7 +41,7 @@
 \contentsline {section}{\numberline {3.1}Back-end}{7}{section.3.1}
 \contentsline {section}{\numberline {3.2}Front-end}{7}{section.3.2}
 \contentsline {section}{\numberline {3.3}Analytics}{7}{section.3.3}
-\contentsline {chapter}{\numberline {4}Data Analytics}{8}{chapter.4}
+\contentsline {chapter}{\numberline {4}Data analytics}{8}{chapter.4}
 \contentsline {section}{\numberline {4.1}Usage}{8}{section.4.1}
 \contentsline {subsection}{\numberline {4.1.1}General}{8}{subsection.4.1.1}
 \contentsline {subsection}{\numberline {4.1.2}Search}{8}{subsection.4.1.2}
@@ -60,7 +60,7 @@
 \contentsline {subsection}{\numberline {4.3.1}Definitions}{10}{subsection.4.3.1}
 \contentsline {subsection}{\numberline {4.3.2}Trends}{10}{subsection.4.3.2}
 \contentsline {subsection}{\numberline {4.3.3}Conclusion}{10}{subsection.4.3.3}
-\contentsline {chapter}{\numberline {5}Looking Forward}{11}{chapter.5}
+\contentsline {chapter}{\numberline {5}Looking forward}{11}{chapter.5}
 \contentsline {section}{\numberline {5.1}Features}{11}{section.5.1}
 \contentsline {section}{\numberline {5.2}Analytics}{11}{section.5.2}
 \contentsline {chapter}{\numberline {6}Conclusions}{12}{chapter.6}
