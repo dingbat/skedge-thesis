@@ -288,50 +288,115 @@ I have identified \emph{three} use-cases for course searching (the existence of 
 
   \subsubsection{Peer Recommendations}
 
-  CDCS currently has no support at all for peer course recommendation, a highly undervalued resource for course finding. Skedge implements peer recomendations through ``Skedge Social,'' a system detailed in the next section.
+  CDCS currently has no support at all for peer course recommendation, a highly undervalued resource for course finding. Skedge implements peer recomendations through Skedge Social, a system detailed in the next section.
 
 %%%
 
-\section{``Skedge Social''}
+\section{Peer connectivity}
 
-The question ``what are you taking this semester?'' is certainly the most common smalltalk phrase uttered on campus within the first few weeks of the semester. Besides the pure motivation  and it is not unreasonable to assume that students want to take classes that their friends are taking.
+The question ``what are you taking this semester?'' may possibly be the most common phrase uttered in campus smalltalk within the first few weeks of a semester (as well as its analogue ``what are you taking \emph{next} semester?'' in the last half of a semester). I hypothesize that this question seeks to do the following:
 
 \begin{itemize}
-  \item ``What are my friends taking?''
-  \item ``What do my friends recommend?''
+  \item Satisfy curiosity
+  \item Find common courses
+  \item Find common free time to meet
+  \item Seek or solicit advice about courses
 \end{itemize}
 
-\subsection{The issue}
+However, students' social lives do not solely exist in-person---social media dominates college social lives etc, v impt to consider [CITE]. The ``what are you taking'' question typically translates to social media in the form of the schedule image exported from Better CDCS posted to Facebook (e.g. Figure \ref{fig:cdcs-social}). There are several limitations to this model.
+
+\begin{figure}[ht]
+  \centering
+  \vspace{10pt}
+  \includegraphics[width=6cm]{images/cdcs/social}
+  \caption{Static image} \label{fig:cdcs-social}
+\end{figure}
+
+\subsection{Limitations of the Facebook model, remedied by Skedge}
 
   \subsubsection{Static image vs. live site}
 
-  - Edits don’t update
-  - Referencing courses
+    As mentioned above, the schedules generated with Better CDCS cannot be shared publicly, and therefore students can only post a static image of their schedule at the time of posting. This excludes the possibility of edits to the schedule being reflected in the same post to their friends.
+  
+    Moreover, referencing courses (i.e. looking up more information on a course a friend is taking) is not very usable under this model, since links cannot be embedded in a static image, and requires a manual search.
 
-  \subsubsection{Finding common courses}
+    Skedge allows users to generate a public link to a view-only, larger version of their schedules (see Figure \ref{fig:sk-share}). If a user visiting others' share pages also has their schedule saved on Skedge, the option to ``overlay'' the user's schedule ontop of the share page's schedule is available, making it easier for friends to find common free time (see Figure \ref{fig:sk-overlay}).
 
-  - requires your friends to share their schedules on FB publicly and you to see their post
+    When this link is posted on Facebook, Skedge will include a rendered image of the schedule in the post, maintaining the element of visual bait with posting a static image.
+
+    \begin{figure}[H]
+      \centering
+      \begin{tabular}{c c}
+        \begin{subfigure}[w]{10.5cm}
+          \centering
+          \fbox{
+            \includegraphics[width=1.00\textwidth]{images/skedge/share}
+          }
+          \caption{Skedge's schedule ``share'' page, publicly accessible at \url{http://skedgeur.com/1234}, with the last four digits being the randomly generated ID for that schedule. Hovering over a course shows information about it, and clicking searches for it.} \label{fig:sk-share}
+        \end{subfigure} \vspace{15pt}\\
+        
+        \begin{subfigure}[w]{10.5cm}
+          \centering
+          \fbox{
+            \includegraphics[width=1.00\textwidth]{images/skedge/share-compare}
+          }
+          \caption{The ``overlay'' feature enabled, superimposing the user's schedule over the share page's schedule.} \label{fig:sk-overlay}
+        \end{subfigure}
+      \end{tabular}
+      \caption{Skedge's per-schedule share page}
+    \end{figure}
 
 
-%%%%%%%%%%%%%%
+  \subsubsection{Robustness of finding courses taken by peers}
 
+  This model imposes several obstacles that prevents users from effectively finding the courses their peers are taking. Doing so within this model:
 
-  - is schedule-first, not search-first
-  - typically only occurs for the current semester
+  \begin{enumerate}
+    \item requires that \textbf{a)} peers share their schedules on Facebook publicly and \textbf{b)} the user incidentally checks Facebook while that post is still deemed relevant via Facebook's algorithms.
+
+    \item is exclusively schedule-oriented, not search-oriented. Course discovery happens from seeing peers' schedules first, not from \emph{browsing} first and being seeing, for each class, that their peers may be taking it.
+
+    \item typically only occurs for the \emph{current} semester. Under the Facebook model, it can be very difficult, nigh impossible, for students looking for opinions, tips, or even academic help for a specific class to find others who had taken that class before. 
+  \end{enumerate}
+
+  Solving these issues would require platform infrastructure external to Facebook, but would still greatly benefit from its ubiquity and centralized role in social media. Since Skedge already saves and archives users' schedules, and Facebook has an integration API, building this platform into Skedge proved to be that opportunity.
 
 %figure
+ 
+\subsection{Skedge Social}
 
-\subsection{Skedge's solution}
+The \emph{Skedge Social} platform aims to leverage existing social media paradigms (such as the \emph{news feed}, \emph{likes}, and \emph{requests}) to more seamlessly give users answers to the questions alluded to earlier---``What are my friends taking?'' and ``What do my friends recommend?''. Skedge Social consists of the following several components:
+  
+  \subsubsection{One-click integration}
+  
+    Login
 
-% Walkthru
+    \begin{figure}[H]
+      \centering
+      \fbox{
+        \includegraphics[width=14cm]{images/skedge/social-login}
+      }
+      \caption{Skedge Social landing page for a user whose account has not yet been integrated with Facebook. Skedge Social appears in the context of the ordinary Skedge interface, and is accessible with the globe icon to the right of the searchbar.} \label{fig:sk-social-login}
+    \end{figure}
 
-  \subsubsection{Friends' course enrollments}
+  \subsubsection{Peer schedules}
 
   Mini-feed
+      
+    \begin{figure}[H]
+      \centering
+      \fbox{
+        \includegraphics[width=10cm]{images/skedge/social}
+      }
+      \caption{Skedge Social's schedule feed (the default of four tabs) for a user who has integrated their Skedge account with Facebook.} \label{fig:sk-social}
+    \end{figure}
+    
 
-  \subsubsection{Friends' course likes}
+  \subsubsection{Peer-liked courses}
 
-  \subsubsection{Likes \& enrollments embedded in results}
+  \subsubsection{Likes \& enrollments embedded in search results}
+
+  ugh screenshot
 
   \subsubsection{Personal schedule synchronization}
 
@@ -339,4 +404,22 @@ The question ``what are you taking this semester?'' is certainly the most common
 
   \subsubsection{Notifications}
 
-  %figs of the 2 types
+  \begin{figure}[H]
+    \centering
+    \begin{tabular}{c c}
+      \begin{subfigure}[w]{3cm}
+        \centering
+        \includegraphics[height=1.5cm]{images/skedge/social-note1}
+        \caption{Note1.} \label{fig:sk-social-note1}
+      \end{subfigure}
+      
+      \begin{subfigure}[w]{3cm}
+        \centering
+        \includegraphics[height=1.5cm]{images/skedge/social-note2}
+        \caption{Note2.} \label{fig:sk-social-note2}
+      \end{subfigure}
+    \end{tabular}
+    \caption{Notifications}
+  \end{figure}
+
+  
