@@ -194,31 +194,73 @@ In the spirit of this chapter's theme, Skedge's search method was, again, primar
 \begin{figure}[ht]
   \centering
   \vspace{10pt}
-  \includegraphics[width=12cm]{images/search-mapping}
+  \includegraphics[width=14cm]{images/search-mapping}
   \caption{Mapping from CDCS's form-based search to the Skedge DSQL} \label{fig:search-mapping}
 \end{figure}
 
-Figure \ref{fig:search-mapping} is a mapping of each CDCS field to an element of the Skedge DSQL.
+Figure \ref{fig:search-mapping} is a mapping of each CDCS field to an element of the Skedge DSQL or unified search. Dashed lines that end abruptly are fields that were deemed unnecessary or redundant due to a Skedge-unique feature. To briefly sum up my rationale for each field:
+
+\onehalfspacing
+
+\subsubsection{Removed fields}
+
+\begin{enumerate}
+
+  \item \emph{School} (e.g. ``College of Arts, Sciences, \& Engineering'', ``Eastman School of Music'', etc.) was removed in favor of always searching all schools, as is the default on CDCS. Searching by department codes (which are unique across schools) designates a school regardless.
+
+  \item \emph{Course Type} (e.g. ``Main Course'', ``Lab'', ``Workshop'' etc.) was removed because Skedge already embeds subsections into courses.
+
+  \item \emph{Status} (i.e. ``Open'', ``Closed'', or ``Cancelled'') was removed because it is often useful to see closed courses if there is possibility of the instructor letting in more students, and searching for cancelled courses did not seem useful.
+
+  \item \emph{Division} (i.e. ``Humanities'', ``Social Sciences'', etc.) was removed because it seems too broad to be useful, but it could be added to the Skedge DSQL if there is demand.
+
+\end{enumerate}
+
+\subsubsection{Left side}
+
+The \emph{unified search} components can be entered directly into the single Skedge search field, along with the Skedge DSQL. It includes the CDCS fields:
+
+\begin{enumerate}
+  \item \emph{Subject} (department).
+  \item \emph{Course} (department code and/or course number, e.g. ``csc 171'').
+  \item \emph{Title} (course title).
+\end{enumerate}
+
+\subsubsection{Right side}
+
+The \emph{Skedge DSQL} is enterable using special keywords and, optionally, qualifiers for those keywords. It includes the CDCS fields:
+
+\begin{enumerate}
+  \item \emph{Year/term}, which is no longer required. It maps to the keywords {\tt \{spring,fall,summer,winter\}} and a four-digit year to specify term and year, and defaults to the current year and term.
+
+  \item \emph{Description}, which is specified by surrounding the query in quotes (e.g. ````buddhism'''').
+
+  \item \emph{Instructor name}, which is specified with the keyword {\tt taught by} and given the instructor name as a qualifier (e.g. ``taught by Guo'').
+
+  \item \emph{Day}, which can be specified with the keywords {\tt \{m,t,w,r,f,s,u\}} for filtering by specific days of the week (e.g. ``mwf'' for Monday-Wednesday-Friday classes only).
+
+  \item \emph{Start time between} is replaced by the keywords {\tt \{early,late\}} which \emph{sort} (ascending and descending, respectively) the results by start time.
+
+  \item \emph{Credit hours between} is replaced by the keyword {\tt credits}, qualified with a number or range (e.g. ``dan 1-2 credits'' for Dance classes with 1-2 credits).
+
+  \item \emph{Upper level writing} is replaced by the single-letter keyword {\tt w} (e.g. ``his w'' for History upper-level writing courses).
+\end{enumerate}
+
+\doublespacing
+
+As noted in Figure \ref{fig:search-mapping}, many use-cases for the \emph{Day} and \emph{Start time between} fields can be obsoleted with an \emph{autofit} feature that will be described later in the next subsection.
 
   \subsubsection{Advantages of the DSQL}
 
-  - 15 fields reduced to 1
+    The main advantage of Skedge's search system is in its reduction of 15 fields to a single one. I hypothesize that since the vast majority of searches fit the department code / course number pattern (this hypothesis later supported in Chapter 4), the time required to force the user to select a term and then find the correct box to enter this query is wasted.
 
-  vs form entry:
-  - Faster
-  - More intuitive
-  - More easily extendable
-
-  - Class size sort
-
+    In addition, once learned and remembered, using a natural language based query language can be faster and more intuitive than clicking on form fields. And more importantly, the Skedge DSQL is more easily extendable as new search features are invented. For CDCS, the more form fields that are added to the sidebar, the less usable its user interface becomes. For Skedge, while it may take longer for users to learn a bigger DSQL, there is no issue with crowding user interface real estate.
+  
   \subsubsection{Disadvantages of the DSQL}
-  grammar ambiguities (can be solved with a `did you mean')
 
-    fall of the roman empire thing
-
-  Having to know the DSL, 
-
-  DSL can be self-taught by the search system being multi-purposed. Used by other links (instructors, course references) around the site. Chapter 4.
+    One disadvantage of Skedge's DSQL is the possible grammatical ambiguity of some queries. For instance, the query ``Fall of the Roman Empire'' could be searching for courses with that as the title, or searching for courses in the \emph{fall term} with the title ``of the Roman Empire''. Unless multiple queries are run and more complex natural language processing is done, the system would have a hard time disambiguating between the two. This could also be solved with a ``did you mean?'' feature, which disambiguates a query into every possible DSQL breakup.
+    
+    Another notable disadvantage of the DSQL is having to know it, and it having a possibly steep learning curve for some users. However, the argument will be made in Chapter 4 that simply by using the site over time, users will self-learn the Skedge DSQL. One of the ways this is possible is thanks to Skedge's search system being \emph{multi-purposed}. Hyperlinks around the site---instructor names (which link to ``{\tt taught by <name>}''), course references, or schedule course blocks for example---all direct the user to an ordinary search results page with the search field populated, signalling to the user that such a search is possible.
 
 
 \subsection{Course selection criteria}
@@ -247,13 +289,13 @@ I have identified \emph{three} use-cases for course searching (the existence of 
     \item ``Autofit'' search\footnote{This feature is under development and is not currently live.}
     \item search by instructor
     \item Random
-    \item Sorts
+    \item Sorts (class size sort)
 
   \end{enumerate}
 
   \subsubsection{Peer Recommendations}
 
-  CDCS currently has no support at all for peer course recommendation, a highly undervalued resource for course finding. Skedge implements peer recomendations through ``Skedge Social,'' a system detailed in the next section.
+  CDCS currently has no support at all for peer course recommendation, a highly undervalued resource for course finding. Skedge implements peer recomendations through ``Skedge Social,'' a system detailed in the next section.
 
 %%%
 
