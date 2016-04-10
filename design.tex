@@ -134,11 +134,11 @@ Note that in Figure \ref{fig:cdcs-sections} (CDCS), the first two boxes are sect
 
 \emph{Course mentions} will often appear in the prequisites, crosslists, comments, or description fields of a course (e.g. ``\textbf{Prerequisites:} CSC 171 or equivalent; MTH 150 is REQUIRED''). Users frequently want to find out more information about mentioned courses (frequency shown in Chapter 4). In CDCS, because course mentions are displayed as ordinary plaintext, users have to scroll back up, make a search for \emph{that} course, and lose their current search context as a result.
 
-Skedge solves this by hyperlinking each course mention to a search query for its respective course, in the style of Wikipedia. Moreover, it protects users from a context-switch by displaying a lightweight popover with that course's information when the user hovers their cursor over the course mention (see Figure \ref{fig:sk-hover}).
+Skedge solves this by linking each course mention to its search query, in the style of Wikipedia. Moreover, it prevents context-switches by displaying a popover containing information on that course when the user hovers their cursor over the course mention (see Figure \ref{fig:sk-hover}).
 
 \begin{figure}[ht]
   \centering
-  \vspace{10pt}
+  \vspace{2pt}
   \fbox{
     \includegraphics[width=8cm]{images/skedge/hover}
   }
@@ -147,16 +147,9 @@ Skedge solves this by hyperlinking each course mention to a search query for its
 
 \subsection{Multiple schedule support}
 
-- Old CDCS+betterCDCS system can't keep track of this, have conflicts when adding stuff
-- Multiple schedules per semester (for different schedule possibilities)
+With an active schedule still in use, students often want to plan their next semester's schedule. This is impossible with the Better CDCS extension, which instead adds courses from both terms to the same schedule, sometimes causing non-existent conflicts. A CDCS user must clear their entire schedule out before scheduling a new one. On Skedge, however, when a user adds a section of a term for which they do not yet have a schedule, a new one will automatically be created for that term. Users are also able to access their old schedules.
 
-\subsection{Exporting}
-
-to Google Calendar, {\tt .ics}, image
-
-- Mobile sync support
-- Export gcal is currently broken
-- Security: BetterCDCS ``sign in'' sends netID in PLAINTEXT over http(!!!)
+Additionally, a common feature request for Skedge is the implementation of multiple schedules \emph{per} term, allowing users to experiment with different schedule possibilities.\footnote{Currently under development, but simple to implement given the existing schedule management structure.}
 
 \section{Search friendliness}
 
@@ -216,7 +209,7 @@ Figure \ref{fig:search-mapping} is a mapping of each CDCS field to an element of
 
 \end{enumerate}
 
-\subsubsection{Left side}
+\subsubsection{Unified Search (left side)}
 
 The \emph{unified search} components can be entered directly into the single Skedge search field, along with the Skedge DSQL. It includes the CDCS fields:
 
@@ -226,7 +219,7 @@ The \emph{unified search} components can be entered directly into the single Ske
   \item \emph{Title} (course title).
 \end{enumerate}
 
-\subsubsection{Right side}
+\subsubsection{Skedge DSQL (right side)}
 
 The \emph{Skedge DSQL} is enterable using special keywords and, optionally, qualifiers for those keywords. It includes the CDCS fields:
 
