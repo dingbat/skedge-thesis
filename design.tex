@@ -158,19 +158,49 @@ to Google Calendar, {\tt .ics}, image
 - Export gcal is currently broken
 - Security: BetterCDCS ``sign in'' sends netID in PLAINTEXT over http(!!!)
 
-\section{Search}
+\section{Search friendliness}
 
-Of course, the most important usability concern for a course explorer/scheduler is effectively \emph{finding courses}.
+Of course, the most important usability concern for a course explorer/scheduler is being able to effectively \emph{find courses}.
 
-First, I will list some of the criteria students have for finding courses and how Skedge improves 
+In this section, I will present the \emph{Skedge DSQL}, a domain-specific query language that is based on natural language. Next, I will demonstrate how Skedge leverages the DSQL to handle the three search criteria students have for finding courses better than CDCS does.
 
 \subsection{Natural language search}
 
-%Figure
+In the spirit of this chapter's theme, Skedge's search method was, again, primarily designed as a reaction to CDCS's. CDCS's search method is a 15-field form (see Figure \ref{fig:cdcs-search}), of which I only found myself regularly using two (one of them being the \emph{required} ``Year/Term'' field). This prompted me to closely examine the fields to a) determine redundancies between them and b) find how to make some of the valuable filter fields more usable. From this came Skedge's unified, natural language based search method, which I call the \emph{Skedge Domain-Specific Query Language (Skedge DSQL)}. Figure \ref{fig:sk-search} is a list of example possible searches shown to users as they type.
 
-See the appendix for a full list of these natural language things.
+\begin{figure}[ht]
+  \centering
+  \vspace{5pt}
+  \begin{tabular}{c c}
+    \begin{subfigure}[w]{4.5cm}
+      \centering
+      \fbox{
+        \includegraphics[width=3.3cm]{images/cdcs/search}
+      }
+      \caption{Form-based search in CDCS} \label{fig:cdcs-search}
+    \end{subfigure}
+    \hspace{5pt}
+    \begin{subfigure}[w]{8.5cm}
+      \centering
+      \fbox{
+        \includegraphics[width=1.00\textwidth]{images/skedge/search}
+      }
+      \caption{Examples of the Skedge DSQL} \label{fig:sk-search}
+    \end{subfigure}
+  \end{tabular}
+  \caption{Two philosophies of search method}
+\end{figure}
 
-  \subsubsection{Advantages}
+\begin{figure}[ht]
+  \centering
+  \vspace{10pt}
+  \includegraphics[width=12cm]{images/search-mapping}
+  \caption{Mapping from CDCS's form-based search to the Skedge DSQL} \label{fig:search-mapping}
+\end{figure}
+
+Figure \ref{fig:search-mapping} is a mapping of each CDCS field to an element of the Skedge DSQL.
+
+  \subsubsection{Advantages of the DSQL}
 
   - 15 fields reduced to 1
 
@@ -181,7 +211,7 @@ See the appendix for a full list of these natural language things.
 
   - Class size sort
 
-  \subsubsection{Disadvantages}
+  \subsubsection{Disadvantages of the DSQL}
   grammar ambiguities (can be solved with a `did you mean')
 
     fall of the roman empire thing
@@ -227,7 +257,7 @@ I have identified \emph{three} use-cases for course searching (the existence of 
 
 %%%
 
-\section{Social}
+\section{``Skedge Social''}
 
 The question ``what are you taking this semester?'' is certainly the most common smalltalk phrase uttered on campus within the first few weeks of the semester. Besides the pure motivation  and it is not unreasonable to assume that students want to take classes that their friends are taking.
 
@@ -256,7 +286,7 @@ The question ``what are you taking this semester?'' is certainly the most common
 
 %figure
 
-\subsection{Skedge Social}
+\subsection{Skedge's solution}
 
 % Walkthru
 
