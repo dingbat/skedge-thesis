@@ -76,7 +76,7 @@ The question ``what are you taking this semester?'' may possibly be the most com
 
   \end{enumerate}
 
-  Solving these issues requires platform infrastructure external to Facebook, but Facebook's ubiquity is invaluable. Since Skedge already saves and archives users' schedules and Facebook has an integration API, building this platform into Skedge was the natural solution.
+  \noindent Solving these issues requires platform infrastructure external to Facebook, but Facebook's ubiquity is invaluable. Since Skedge already saves and archives users' schedules and Facebook has an integration API, building this platform into Skedge was the natural solution.
 
 %figure
  
@@ -128,7 +128,9 @@ The \emph{Skedge Social} platform aims to leverage existing social media paradig
 
   \subsubsection{Personal schedule synchronization}
 
-  For the moment, Skedge leverages a user's 
+  In Section 2.1.4, discussing the disadvantages of Better CDCS's decentralized schedule store, I mentioned the possibility of synchronizing a user's schedules across their devices. Skedge leverages a user's Facebook integration to provide this synchronization. Upon signing into Skedge with Facebook from another device, that device's browser will automatically update with all of the user's data. Modification from any device will propogate changes to the rest.
+
+  For this purpose, implementation of a simple login system (either in-house or using NetID, for instance) could easily replace the reliance on Facebook integration. This is currently unsupported, but is a space to explore in the near future.
 
   \subsubsection{Privacy and share requests}
 
@@ -139,26 +141,31 @@ The \emph{Skedge Social} platform aims to leverage existing social media paradig
   \item ``Share my schedule and likes only with friends I approve'' (Private)
   \end{enumerate}
 
-  
-  
+  \noindent To implement privacy option \#2, Skedge Social includes a basic share request/approval system. The main interface has tabs \emph{Share requests} and \emph{Non-sharing friends} (visible in Figure \ref{fig:sk-feed}) for displaying pending share requests for approval, and for sending share requests to the user's Facebook friends on Skedge that have the private setting enabled, respectively.
 
   \subsubsection{Notifications}
 
-  \begin{figure}[H]
+  Skedge Social provides notifications for any pending share requests described above (Figure \ref{fig:sk-social-note1}), as well as for any Facebook friends that have joined the platform since the user's last visit to Skedge Social (Figure \ref{fig:sk-social-note2}).
+
+  CITE THAT NOTIFICATION BADGES ARE PAVLOVIAN
+
+  \begin{figure}
     \centering
     \begin{tabular}{c c}
-      \begin{subfigure}[w]{3cm}
+      \begin{subfigure}[w]{5.5cm}
         \centering
         \includegraphics[height=1.5cm]{images/skedge/social-note1}
-        \caption{Note1.} \label{fig:sk-social-note1}
+        \caption{\emph{Pending share requests} notification} \label{fig:sk-social-note1}
       \end{subfigure}
+
+      \hspace{20pt}
       
-      \begin{subfigure}[w]{3cm}
+      \begin{subfigure}[w]{6.5cm}
         \centering
         \includegraphics[height=1.5cm]{images/skedge/social-note2}
-        \caption{Note2.} \label{fig:sk-social-note2}
+        \caption{\emph{New friends} notification} \label{fig:sk-social-note2}
       \end{subfigure}
     \end{tabular}
-    \caption{Notifications}
+    \caption{Notifications: none, one, or both of them can adorn the Skedge Social logo}
   \end{figure}
 
