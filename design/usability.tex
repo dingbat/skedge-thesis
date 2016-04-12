@@ -71,3 +71,22 @@ Skedge solves this by linking each course mention to its search query, in the st
 With an active schedule still in use, students often want to plan their next semester's schedule. This is impossible with the Better CDCS extension, which instead adds courses from both terms to the same schedule, sometimes causing non-existent conflicts. A CDCS user must clear their entire schedule out before scheduling a new one. On Skedge, however, when a user adds a section of a term for which they do not yet have a schedule, a new one will automatically be created for that term. Users are also able to access their old schedules.
 
 Additionally, a common feature request for Skedge is the implementation of multiple schedules \emph{per} term, allowing users to experiment with different schedule possibilities.\footnote{Currently under development, but simple to implement given the existing schedule management structure.}
+
+\subsection{Schedule export}
+
+Better CDCS provides two ways for users to export their schedule---as image or to Google calendar--except that the Google Calendar export feature is completely non-functional, telling users that ``{\tt This export tool will only work properly for the Spring of 2015}'' only \emph{after} they authorized the tool to access their Google account.
+
+Notably missing as an export option is the \emph{iCalendar} file format (extension {\tt .ics}), which can be imported into many calendar software products. It is the only format the Mac OS and iOS Calendar applications can accept, to offer one example of very popular products that are therefore unsupported by Better CDCS.
+
+Skedge provides the option for users to export their own or another user's schedule directly to \emph{Google Calendar} (even allowing users to choose a calendar---or create a new one for Skedge---to insert their courses into), as an \emph{image} (JPEG, PNG, or SVG), or in {\tt .ics} format (see Figure \ref{fig:sk-export}). The {\tt .ics} and Google Calendar exports include course codes, titles, locations, and properly repeat courses until the end of the current semester.
+
+\vspace{20pt}
+
+\begin{figure}[ht]
+  \centering
+  \vspace{2pt}
+  \includegraphics[width=14cm]{images/skedge/export}
+  \caption{Exporting to Google Calendar (note the other export options on the top right)} \label{fig:sk-export}
+\end{figure}
+
+\clearpage

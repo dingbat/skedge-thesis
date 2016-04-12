@@ -48,7 +48,7 @@ From November 3, 2015 to April 11, 2016 (a period of 159 days), Skedge has seen\
 
 Figure \ref{fig:searches} shows user search submissions over the time, and makes the periodicity of Skedge usage extremely apparent. Although it only shows a bit more than one ``phase,'' the cycle of events---\emph{semester begins} (students check course times, room locations, etc. while they get accustomed to the semester), \emph{next semester's course catalog released} (students explore the courses offered and build possible schedules), \emph{next semester registration opens} (cross-checking and officially registering each course with the Registrar)---clearly drives the majority of site traffic.
 
-What this means is that Skedge is not seen as an experiment or a proof of concept that is not production-ready. Rather, its traffic patterns show that it is consistenly \emph{relied upon} by students and used for its intended purpose in times of biggest course scheduling need. %, and the same can be seen with other usage measures such as schedule exporting and clicking on the Wikipedia-style embedded links (Figures \ref{fig:exports} and \ref{fig:linksearches}, respectively).
+What this means is that Skedge is not seen as an experiment or a proof of concept that is not production-ready. Rather, its traffic patterns show that it is consistenly \emph{relied upon} by students and used for its intended purpose in times of biggest course scheduling need.
 
 It should also be noted that before March, the majority of the userbase as I knew it consisted of seniors, as the majority of people that I knew personally and shared Skedge with belonged to my class. The latest two major events reported in the graph above thus very impressively consist of \emph{very few seniors}, who have no courses left to schedule. March also marked the very first time I publicly advertised Skedge, although not very strongly. It was sent out to all students in the Computer Science mailing list as well as posted to two class-wide Facebook groups.
 
@@ -66,13 +66,15 @@ The usability of and user satisfaction with a tool is hard to measure when it ho
   \end{figure}
 
 
-Figure \ref{fig:searchtypes} validates the hypothesis made in Section 2.3 regarding the search interface design, demonstrating that the \emph{department code} and \emph{course number} search modes dominate user searches, accounting for over 85\% of all searches on Skedge. With this knowledge, bringing out the tucked-away, nondistinct field for this search in CDCS into prominence is a usability design choice that accomodates empirical usage.
+Figure \ref{fig:searchtypes} validates the hypothesis made in Section 2.3 regarding the search interface design, demonstrating that the \emph{department code} and \emph{course number} search modes dominate user searches, accounting for over 85\% of all searches on Skedge. With this knowledge, bringing out the tucked-away, nondistinct field for this search in CDCS into prominence is a usability design choice that accomodates an empirically verified use case.
 
 \subsubsection{Empty searches}
 
-  Of the total 45,466 searches on Skedge logged since November 2nd 2015, 89.4\% (40,625) of searches produce nonempty search results, whereas 10.6\% (4,841) of searches come up empty. This already is evidence of an effective search mechanism, but of those empty searches, the vast majority
+  Of the total 45,466 searches on Skedge logged since November 2nd 2015, 89.4\% (40,625) of searches produce nonempty search results, whereas 10.6\% (4,841) of searches come up empty.
 
-  Can learn from these searches. This is the same method WolframAlpha describes its team using to improve their freeform input system \cite{wolfram2}.
+  This already is evidence of an effective search mechanism, but of those empty searches, the vast majority (92\%) contain typos or are for courses that simply don't exist. The other significant portion of searches include instructor names without the requisite ``taught by'' for SkedgeQL to pick it up as an instructor search, and such a fix could easily be made.
+
+  This type of analysis can powerfully indicate holes in the query language (i.e. searches intuitive for users) that ought to be fixed, which is the same method WolframAlpha describes its team using to improve their freeform input system \cite{wolfram2}. Figure \ref{fig:empty-queries} lists a few notable examples of this nature. (Figure \ref{fig:funny-queries} lists a few funny queries I came across.)
 
   \begin{figure}
   {\renewcommand{\arraystretch}{1.5}
@@ -83,7 +85,7 @@ Figure \ref{fig:searchtypes} validates the hypothesis made in Section 2.3 regard
     ``{\tt Prereq 280}'' \newline ``{\tt has-Prereq: 280}''
     & Course dependencies \\ \hline
 
-    ``{\tt tuesday 3:25-4:40}'' \newline ``{\tt TR 3:25-4:40}'' \newline ``{\tt m/w}'' \newline ``{\tt classes tuesdays and thursdays between 11:05 and 12:20}'' \newline ``{\tt weekend summer 2016}''
+    ``{\tt tuesday 3:25-4:40}'' \newline ``{\tt m/w}'' \newline ``{\tt classes tuesdays and thursdays between 11:05 and 12:20}'' \newline ``{\tt weekend summer 2016}''
     & \parbox[c]{\hsize}{Better day-of-the-week handling} \\ \hline
 
     ``{\tt 2 credits natural science}'' 
@@ -93,12 +95,15 @@ Figure \ref{fig:searchtypes} validates the hypothesis made in Section 2.3 regard
     & Search by full department name \\ \hline
 
     ``{\tt new csc courses}'' 
-    & The word ``{\tt courses}'' (somewhat common) \\ \hline
+    & The word ``{\tt courses}'' (somewhat common with advanced query types) \\ \hline
+
+    ``{\tt curriculum change}'' 
+    & Alternative for ``{\tt new}'' keyword \\ \hline
 
     ``{\tt guo}'' 
     & Instructor without ``{\tt taught by}'' (very common) \\ \hline
 
-    ``{\tt stt212 vs mth201}'' \newline ``{\tt stt212 OR mth201}'' 
+    ``{\tt stt212 vs mth201}'' \newline ``{\tt stt212 OR mth201}'' \newline ``{\tt csc 2\{4,8\}2}'' \newline ``{\tt csc 242|282}''
     & Searching multiple queries at the same time \\ \hline
 
     ``{\tt crosslisted csc lin}'' 
@@ -107,12 +112,13 @@ Figure \ref{fig:searchtypes} validates the hypothesis made in Section 2.3 regard
     ``{\tt place: hubbell}'' \newline ``{\tt hubbell friday}'' 
     & Search by location, although motives unclear \\ \hline
 
-    ``{\tt MTH 2*}'' 
+    ``{\tt MTH 2*}'' \newline ``{\tt csc 2xx}''
     & Using ``{\tt *}'' instead of an omission (e.g. ``{\tt MTH 2}'' would work) \\ \hline
 
     \hline
   \end{tabular}
   \caption{Example of search queries that produced no results but that indicate demand for added search features. The corresponding features that currently lack in SkedgeQL are described on the right.}
+  \label{fig:empty-queries}
   \end{figure}
 
 \begin{figure}
@@ -127,7 +133,7 @@ Figure \ref{fig:searchtypes} validates the hypothesis made in Section 2.3 regard
     \\ \hline
 
     ``{\tt game of thrones}''
-    & ``{\tt fun classes}''
+    & ``{\tt interesting courses}''
     & ``{\tt fun classes in csc}''
     \\ \hline
     
@@ -139,20 +145,21 @@ Figure \ref{fig:searchtypes} validates the hypothesis made in Section 2.3 regard
 
     \hline
   \end{tabular}
-  \caption{Humerous search submissions}
+  \caption{Humorous search submissions}
+  \label{fig:funny-queries}
   \end{figure}
 
 \subsection{Exports}
 
-\begin{figure}[H]
+\begin{figure}
   \centering
   \includegraphics[width=1.0\textwidth]{images/graph/exports}
 
-  \caption{Etc}
+  \caption{Different types of schedule exporting over time}
   \label{fig:exports}
 \end{figure}
 
-Success! (broken on cdcs)
+In Section 2.2.5 (on the design of Skedge's schedule exporting), a major usability improvement claimed was the ability to export schedules to the {\tt .ics} format, a widely used format for many calendar applications, as well as offering functional Google Calendar export. Figure \ref{fig:exports} shows usage of the export functions over time, demonstrating its consistent and healthy use (traffic surges once again in line with major scheduling events.) This data confirms that there is strong demand for exporting to {\tt .ics}---it is even more common than Google Calendar export.
 
 \subsection{``Link-searches''}
 
