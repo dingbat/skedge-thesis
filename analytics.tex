@@ -1,62 +1,128 @@
 
 \chapter{Data analytics}
 
-Hypotheses:
+In this chapter I propose three hypotheses. They are:
 
-1. Skedge's differences from and additions to CDCS are usable and have real need
+\begin{enumerate}
+  \item Skedge's differences from and additions to CDCS are \textbf{usable and have real need}.
 
-2. Skedge’s navigations-per-add and other metrics demonstrate effectiveness of the use cases
-a) direct searching, and
-b) course browsing
+  \item Skedge’s \emph{navigations-per-add} demonstrate the \textbf{effectiveness of its search features} for each of the following three user search paradigms:
 
-3. Skedge’s DSL is user-friendly; users learn more advanced search types over time by using it
+  \begin{enumerate}
+    \item direct search,
+    \item exploratory search, and
+    \item peer-guided search
+  \end{enumerate}
+
+  \item Skedge’s \textbf{DSQL is user-friendly}; users learn more advanced search types over time \textbf{simply by using it}.
+\end{enumerate}
+
+\noindent In the following sections I will present my analysis on collected usage data since November 3rd 2015, which will serve to validate each hypothesis.
 
 \section{Usage}
 
 \subsection{General}
 
-Since November 3rd 2015 (137 days)
-3,768 unique users
-4,500 schedules
-Average 90 sessions/day
-Average 4.92 pages/session
-Average 5:31 minutes/session
-28\% of sessions are from new users
+From November 3, 2015 to April 11, 2016 (a period of 159 days), Skedge has seen\ldots
 
-MOBILE RESULT
+\begin{itemize}
+  \item 4,713 users that have added or bookmarked at least 1 course
+  \item 5,256 schedules
+  \item 17,012 sessions\footnote{A session is defined by a period of activity expiring after 30 minutes of inactivity}, 75\% of which are from returning visitors
+  \item 107 sessions per day, on average
+  \item 5.40 pages viewed per session, on average 
+  \item 6 minutes spent per session, on average
+\end{itemize}
+
+\begin{figure}
+  \centering
+
+  \includegraphics[width=1.0\textwidth]{images/graph/searches}
+
+  \caption{Etc}
+  \label{fig:searches}
+
+\end{figure}
+
+periodic visit cycle graph means people are actually using it and decided to stay with it, not declining, can be seen w exports & link-searches.
+
+also should be noted that NO seniors participated in the last, the majority of the userbase!
+
+success Considering skedge is OPTIONAL.
+
+\subsection{Exports}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=1.0\textwidth]{images/graph/exports}
+
+  \caption{Etc}
+  \label{fig:searchtypes}
+\end{figure}
+
+Success! (broken on cdcs)
+
+\subsection{``Link-searches''}
+
+\begin{figure}
+  \centering
+  \includegraphics[width=1.0\textwidth]{images/graph/linksearches}
+
+  \caption{Etc}
+  \label{fig:searchtypes}
+\end{figure}
+
+Success, used!
+
+\subsection{Mobile}
+
+\begin{itemize}
+  \item 11.54\% of sessions
+  \item 2.74 page viewed per session, on average
+  \item 2 minutes spent per session, on average
+\end{itemize}
+
+success bc mobile doesn't exist on cdcs
+
+\subsection{Course Blocks}
+
+\begin{figure}
+  \centering
+
+  \fbox {
+    \includegraphics[width=8cm]{images/skedge/blocks}
+  }
+
+  \caption{Etc}
+  \label{fig:searchtypes}
+
+\end{figure}
+
+40\% of sessions have at least one block-click
+Average of 5.12 block-clicks per session
+
+success because you can't click schedule blocks in better cdcs!!
 
 \subsection{Search}
 
-% figs
+  \subsubsection{Search types}
+
+  \begin{figure}
+    \centering
+    \includegraphics[width=1.0\textwidth]{images/graph/searchtypes}
+
+    \caption{Etc}
+    \label{fig:searchtypes}
+
+  \end{figure}
 
   \subsubsection{Empty searches}
 
   Can learn from these
   Some funny ones
 
-\subsection{Course blocks}
 
-40\% of sessions have at least one block-click
-Average of 4.94 block-clicks per session
-
-\subsection{Social}
-
-90 users have linked Skedge to Facebook
-Since March 1st,
-4,000+ visits (200 visits/day)
-~60\% of visits to /social were returning visitors
-90 overlays onto friends’ schedules
-10 clicks to Facebook profiles :(
-- get stats from the fb dashboard
-
-\subsection{Conclusion}
-
-Success! Considering skedge is OPTIONAL.
-+ course blocks (obv usecase, can't click)
-+ exports (not supported by thing)
-+ mobile
-
-\section{Navigations-per-add}
+\section{Effectiveness of search}
 
 \subsection{Definitions}
 
@@ -65,12 +131,18 @@ a search, or
 a click on an instructor’s name, or
 a click on a crosslisted or prerequisite course link
 
-The navigations-per-{add, bookmark} measure is
-the number of navigations a user took (within one session) until a course was {added, bookmarked}
+The navigations-per-add measure is
+the number of navigations a user took (within one session) until a course was added, bookmarked
 
 \subsection{Trends}
 
-%figs
+\begin{figure}
+  \centering
+  \includegraphics[width=1.0\textwidth]{images/graph/combined_navs}
+
+  \caption{Etc}
+  \label{fig:searchtypes}
+\end{figure}
 
 \subsection{Breaking them apart}
 
@@ -80,17 +152,46 @@ the number of navigations a user took (within one session) until a course was {a
 
   \subsubsection{Direct searches}
 
+  \begin{figure}
+    \centering
+    \includegraphics[width=1.0\textwidth]{images/graph/direct_navs}
+
+    \caption{Etc}
+    \label{fig:searchtypes}
+  \end{figure}
+
+  Why would 0-navs be so common with direct searches? 65\% subsections!
+
   \subsubsection{Browse}
 
   % STAT: Find major of users, find how many non-major courses they found
 
-\subsection{Conclusion}
+  \begin{figure}
+    \centering
+    \includegraphics[width=1.0\textwidth]{images/graph/browse_navs}
 
-%figs
+    \caption{Etc}
+    \label{fig:searchtypes}
+  \end{figure}
 
-Effective++
+  As expected, the 0-navs were mostly maincourses
 
-\section{Users' search types over time}
+  Effective++
+
+  \subsubsection{Social}
+
+  90 users have linked Skedge to Facebook
+  Since March 1st,
+  4,000+ visits (200 visits/day)
+  ~60\% of visits to /social were returning visitors
+  90 overlays onto friends’ schedules
+  10 clicks to Facebook profiles :(
+  - get stats from the fb dashboard
+
+  success?????
+
+
+\section{Complexity of users' searches over time}
 
 \subsection{Definitions}
 
@@ -115,17 +216,27 @@ upper-level writing
 
 \subsection{Trends}
 
-% fig
+\begin{figure}
+  \centering
 
-First increase (60.5% of users)
+  \includegraphics[width=1.00\textwidth]{images/graph/search_dt}
+
+  \\
+  \vspace{5pt}
+
+  \includegraphics[width=0.65\textwidth]{images/table/search_dt}
+
+  \caption{Etc}
+  \label{fig:searchtypes}
+\end{figure}
+
+First increase (60.5\% of users)
 Median: 2 searches
 Average: 4.23 searches
 (Starting at 1 counts as an increase value of 0)
 
-Second increase (7.9% of users)
+Second increase (7.9\% of users)
 Median: 8 searches
 Average: 17.52 searches
 
-\subsection{Conclusion}
-
-DSL++
+DSQL++
