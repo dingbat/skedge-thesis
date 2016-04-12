@@ -24,11 +24,11 @@ CDCS makes an AJAX request with every submitted search, meaning that the server 
 
 \subsection{Mobile}
 
-According to Mary Meeker's 2015 Mobile Technology Trends from Kleiner Perkins Caufield \& Byers\cite{kpcb}, in 2014, 51\% of adult time spent per day on the Internet was from a mobile device, versus 42\% spent on a desktop computer or laptop. Time spent on the Internet with mobile devices reached three hours per day in 2014, compared to less than one hour in 2010 (12\% mobile vs. 75\% desktop/laptop time share).
+According to Mary Meeker's 2015 Mobile Technology Trends from Kleiner Perkins Caufield \& Byers\cite{kpcb}, in 2014, 51\% of adult time spent per day on the Internet was from a mobile device, versus 42\% spent on a desktop computer or laptop. Time spent on the Internet with mobile devices reached three hours per day in 2014, compared to less than one hour in 2010 (when there was 12\% mobile vs. 75\% desktop/laptop time share).
 
-Undeniably, supporting mobile devices and tablets in web applications is crucial for usability nowadays. Note how Skedge is responsive to the user's device in Figure \ref{fig:sk-mobile}, compared with CDCS's lack of mobile support in Figure \ref{fig:cdcs-mobile}. CDCS on mobile requires the user to pinch and drag around both to read results and to make new searchs, while Skedge adapts content to the device's screen and fixes the search bar to the top of the screen for easy access while browsing.
+Undeniably, supporting mobile devices and tablets in web applications is crucial for usability nowadays. Note how Skedge responds to the device form-factor in Figure \ref{fig:sk-mobile}, compared with CDCS's lack of mobile support in Figure \ref{fig:cdcs-mobile}. CDCS on mobile requires the user to pinch and drag around both to read results and to make new searchs, while Skedge adapts content to the device's screen and fixes the search bar to the top of the screen for easy access while browsing.
 
-Moreover, since no major mobile browser currently supports browser extensions (and if one did, the extensions themselves would most likely need to be re-architected), CDCS on a mobile device loses all scheduling functionality, unlike with Skedge on mobile.
+Moreover, since no major mobile browser currently supports browser extensions (and if one did, the extensions themselves would most likely need to be re-architected), CDCS on a mobile device loses all scheduling functionality, unlike Skedge.
 
 \begin{figure}[ht]
   \centering
@@ -50,7 +50,7 @@ Moreover, since no major mobile browser currently supports browser extensions (a
 
 \subsection{Public API}
 
-With the increasing number of attendees at University of Rochester's hackathons, it is clear that the University's ``hacker culture'' is growing---more students are collaborating to build side-projects that integrate resources and servies often benefitting the student community. Open-source and open-information services greatly help to foster such innovation, and having public APIs is essential toward this end.
+With the increasing number of attendees at University of Rochester's hackathons, it is clear that the University's ``hacker culture'' is growing---more students are collaborating to build side-projects that integrate resources and servies often benefitting the student community. Open-source and open-information services greatly help to foster such innovation, and having public APIs is essential toward this end.\cite{Milberry}\cite{hackers}
 
 Skedge provides a public JSON API at the root URL \url{http://www.skedgeur.com/api/}, made at the request of a student that was interested in using its course data, and the API has already been used in projects by several other student groups. The endpoints included are \url{/api/courses?q=query} (Skedge's query language---described in detail in section 2.3---is supported here), \url{/api/departments?q=optional_query}, and \url{/api/instructors?q=optional_query}.
 
