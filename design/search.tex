@@ -1,13 +1,11 @@
 
 \section{Search friendliness}
 
-Of course, the most important usability concern for a course explorer/scheduler is being able to effectively \emph{find courses}.
-
-In this section, I will present the \emph{Skedge DSQL}, a domain-specific query language that is based on natural language. Next, I will demonstrate how Skedge leverages the DSQL to handle the three search criteria students have for finding courses better than CDCS does.
+The most important usability concern of all for a course explorer/scheduler is being able to effectively \emph{find courses}. In this section, I will present \emph{SkedgeQL}, a domain-specific query language that is free-form and based on natural language. Next, I will demonstrate how Skedge leverages the DSQL to handle the three search criteria students have for finding courses better than CDCS does.
 
 \subsection{Natural language search}
 
-In the spirit of this chapter's theme, Skedge's search method was, again, primarily designed as a reaction to CDCS's. CDCS's search method is a 15-field form (see Figure \ref{fig:cdcs-search}), of which I only found myself regularly using two (one of them being the \emph{required} ``Year/Term'' field). This prompted me to closely examine the fields to a) determine redundancies between them and b) find how to make some of the valuable filter fields more usable. From this came Skedge's unified, natural language based search method, which I call the \emph{Skedge Domain-Specific Query Language (Skedge DSQL)}. Figure \ref{fig:sk-search} is a list of example possible searches shown to users as they type.
+In the spirit of this chapter's theme, Skedge's search method was, again, primarily designed as a reaction to CDCS's. CDCS's search method is a 15-field form (see Figure \ref{fig:cdcs-search}), of which I only found myself regularly using two (one of them being the \emph{required} ``Year/Term'' field). This prompted me to closely examine the fields to a) determine redundancies between them and b) find how to make some of the valuable filter fields more usable. From this came Skedge's unified, natural language based search method, which I call the Skedge Query Language, or \emph{SkedgeQL}. Figure \ref{fig:sk-search} is a list of example possible searches shown to users as they type.
 
 \begin{figure}[ht]
   \centering
@@ -95,7 +93,9 @@ The \emph{Skedge DSQL} is enterable using special keywords and, optionally, qual
 
     The main advantage of Skedge's search system is in its reduction of 15 fields to a single one. I hypothesize that since the vast majority of searches fit the department code / course number pattern (this hypothesis later supported in Chapter 4), the time required to force the user to select a term and then find the correct box to enter this query is wasted.
 
-    In addition, once learned and remembered, using a natural language based query language can be faster and more intuitive than clicking on form fields. And more importantly, the Skedge DSQL is more easily extendable as new search features are invented. For CDCS, the more form fields that are added to the sidebar, the less usable its user interface becomes. For Skedge, while it may take longer for users to learn a bigger DSQL, there is no issue with crowding user interface real estate.
+    It has been shown that once learned, natural language based query languages can be faster, more intuitive, and more usable than traditional form-based methods \cite{dsl}. WolframAlpha's hugely successful online free-form search is a notable pioneer in this field \cite{wolfram}.
+
+    Lastly, the Skedge DSQL is more easily extendable as new search features are invented. For CDCS, the more form fields that are added to the sidebar, the less usable its user interface becomes. For Skedge, while it may take longer for users to learn a bigger DSQL, there is no issue with crowding user interface real estate.
   
   \subsubsection{Disadvantages of the DSQL}
 
