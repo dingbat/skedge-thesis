@@ -1,7 +1,7 @@
 
 \section{Search friendliness}
 
-The most important usability concern of all for a course explorer/scheduler is being able to effectively \emph{find courses}. In this section, I will present \emph{SkedgeQL}, a domain-specific query language that is free-form and based on natural language. Next, I will demonstrate how Skedge leverages the DSQL to handle the three search criteria students have for finding courses better than CDCS does.
+The most important usability concern of all for a course explorer/scheduler is being able to effectively \emph{find courses}. In this section, I will present \emph{SkedgeQL}, a domain-specific query language that is free-form and based on natural language. Next, I will demonstrate how Skedge leverages SkedgeQL to handle the three search criteria students have for finding courses better than CDCS does.
 
 \subsection{Natural language search}
 
@@ -24,7 +24,7 @@ In the spirit of this chapter's theme, Skedge's search method was, again, primar
       \fbox{
         \includegraphics[width=1.00\textwidth]{images/skedge/search}
       }
-      \caption{Examples of the Skedge DSQL} \label{fig:sk-search}
+      \caption{Examples of SkedgeQL} \label{fig:sk-search}
     \end{subfigure}
   \end{tabular}
   \caption{Two philosophies of search method}
@@ -34,10 +34,10 @@ In the spirit of this chapter's theme, Skedge's search method was, again, primar
   \centering
   \vspace{10pt}
   \includegraphics[width=14cm]{images/search-mapping}
-  \caption{Mapping from CDCS's form-based search to the Skedge DSQL} \label{fig:search-mapping}
+  \caption{Mapping from CDCS's form-based search to SkedgeQL} \label{fig:search-mapping}
 \end{figure}
 
-Figure \ref{fig:search-mapping} is a mapping of each CDCS field to an element of the Skedge DSQL or unified search. Dashed lines that end abruptly are fields that were deemed unnecessary or redundant due to a Skedge-unique feature. To briefly sum up my rationale for each field:
+Figure \ref{fig:search-mapping} is a mapping of each CDCS field to an element of SkedgeQL or its unified search. Dashed lines that end abruptly are fields that were deemed unnecessary or redundant due to a Skedge-unique feature. To briefly sum up my rationale for each field:
 
 \onehalfspacing
 
@@ -51,13 +51,13 @@ Figure \ref{fig:search-mapping} is a mapping of each CDCS field to an element of
 
   \item \emph{Status} (i.e. ``Open'', ``Closed'', or ``Cancelled'') was removed because it is often useful to see closed courses if there is possibility of the instructor letting in more students, and searching for cancelled courses did not seem useful.
 
-  \item \emph{Division} (i.e. ``Humanities'', ``Social Sciences'', etc.) was removed because it seems too broad to be useful, but it could be added to the Skedge DSQL if there is demand.
+  \item \emph{Division} (i.e. ``Humanities'', ``Social Sciences'', etc.) was removed because it seems too broad to be useful, but it could be added to SkedgeQL if there is demand.
 
 \end{enumerate}
 
 \subsubsection{Unified Search (left side)}
 
-The \emph{unified search} components can be entered directly into the single Skedge search field, along with the Skedge DSQL. It includes the CDCS fields:
+The \emph{unified search} components can be entered directly into the single Skedge search field, along with SkedgeQL. It includes the CDCS fields:
 
 \begin{enumerate}
   \item \emph{Subject} (department)
@@ -65,9 +65,9 @@ The \emph{unified search} components can be entered directly into the single Ske
   \item \emph{Title} (course title)
 \end{enumerate}
 
-\subsubsection{Skedge DSQL (right side)}
+\subsubsection{SkedgeQL (right side)}
 
-The \emph{Skedge DSQL} is enterable using special keywords and, optionally, qualifiers for those keywords. It includes the CDCS fields:
+SkedgeQL is enterable using special keywords and, optionally, qualifiers for those keywords. It includes the CDCS fields:
 
 \begin{enumerate}
   \item \emph{Year/term}, which is no longer required. It maps to the keywords {\tt \{spring,fall,summer,winter\}} and a four-digit year to specify term and year, and defaults to the current year and term.
@@ -89,24 +89,24 @@ The \emph{Skedge DSQL} is enterable using special keywords and, optionally, qual
 
 \noindent As noted in Figure \ref{fig:search-mapping}, many use-cases for the \emph{Day} and \emph{Start time between} fields can be obsoleted with an \emph{autofit} feature that will be described later in the next subsection.
 
-  \subsubsection{Advantages of the DSQL}
+  \subsubsection{Advantages of SkedgeQL}
 
     The main advantage of Skedge's search system is in its reduction of 15 fields to a single one. I hypothesize that since the vast majority of searches fit the department code / course number pattern (this hypothesis later supported in Chapter 4), the time required to force the user to select a term and then find the correct box to enter this query is wasted.
 
     It has been shown that once learned, natural language based query languages can be faster, more intuitive, and more usable than traditional form-based methods \cite{dsl}. WolframAlpha's hugely successful online free-form search is a notable pioneer in this field \cite{wolfram}.
 
-    Lastly, the Skedge DSQL is more easily extendable as new search features are invented. For CDCS, the more form fields that are added to the sidebar, the less usable its user interface becomes. For Skedge, while it may take longer for users to learn a bigger DSQL, there is no issue with crowding user interface real estate.
+    Lastly, SkedgeQL is more easily extendable as new search features are invented. For CDCS, the more form fields that are added to the sidebar, the less usable its user interface becomes. For Skedge, while it may take longer for users to learn a bigger query language, there is no issue with crowding user interface real estate.
   
-  \subsubsection{Disadvantages of the DSQL}
+  \subsubsection{Disadvantages of SkedgeQL}
 
-    One disadvantage of Skedge's DSQL is the possible grammatical ambiguity of some queries. For instance, the query ``Fall of the Roman Empire'' could be searching for courses with that as the title, or searching for courses in the \emph{fall term} with the title ``of the Roman Empire''. Unless multiple queries are run and more complex natural language processing is done, the system would have a hard time disambiguating between the two. This could also be solved with a ``did you mean?'' feature, which disambiguates a query into every possible DSQL breakup.
+    One disadvantage of SkedgeQL is the possible grammatical ambiguity of some queries. For instance, the query ``Fall of the Roman Empire'' could be searching for courses with that as the title, or searching for courses in the \emph{fall term} with the title ``of the Roman Empire''. Unless multiple queries are run and more complex natural language processing is done, the system would have a hard time disambiguating between the two. This could also be solved with a ``did you mean?'' feature, which disambiguates a query into every possible SkedgeQL breakup.
     
-    Another notable disadvantage of the DSQL is having to know it, and it having a possibly steep learning curve for some users. However, the argument will be made in Chapter 4 that simply by using the site over time, users will self-learn the Skedge DSQL. One of the ways this is possible is thanks to Skedge's search system being \emph{multi-purposed}. Hyperlinks around the site---instructor names (which link to ``{\tt taught by <name>}''), course references, or schedule course blocks for example---all direct the user to an ordinary search results page with the search field populated, signalling to the user that such a search is possible.
+    Another notable disadvantage of SkedgeQL is having to know it, and it having a possibly steep learning curve for some users. However, the argument will be made in Chapter 4 that simply by using the site over time, users will self-learn Skedge. One of the ways this is possible is thanks to Skedge's search system being \emph{multi-purposed}. Hyperlinks around the site---instructor names (which link to ``{\tt taught by <name>}''), course references, or schedule course blocks for example---all direct the user to an ordinary search results page with the search field populated, signalling to the user that such a search is possible.
 
 
 \subsection{Course selection criteria}
 
-I have identified \emph{three} use-cases for course searching (the existence of and distinction between these cases will be demonstrated with collected usage data in Chapter 4). The three cases are \textbf{requirements}, \textbf{electives}, and \textbf{peer recommendations}. The Skedge DSL and other application features offer substantial improvements over CDCS for each of these cases. 
+I have identified \emph{three} use-cases for course searching (the existence of and distinction between these cases will be demonstrated with collected usage data in Chapter 4). The three cases are \textbf{requirements}, \textbf{electives}, and \textbf{peer recommendations}. SkedgeQL and other application features offer substantial improvements over CDCS for each of these cases. 
 
   \subsubsection{Requirements}
 
@@ -126,10 +126,10 @@ I have identified \emph{three} use-cases for course searching (the existence of 
 
   \begin{enumerate}
 
-    \item The Skedge DSQL includes the ``new'' keyword, which qualifies an accompanying search by only displaying the courses that were not offered the previous year for that term. For instance, searching ``new csc'' today (Fall 2016) would show Fall Computer Science courses that have been added to the catalog or changed since Fall 2015.
-    \item The Skedge DSQL could include an ``autofit'' keyword, which would take into account the user's current schedule, and only show sections that would not conflict with any already scheduled times.\footnote{This feature is under development and is not currently live.}
-    \item The Skedge DSQL includes the ``random'' keyword, which displays a single random course matching the accompanying query. For instance, ``random csc'' would show a random course in Computer Science for the current term. Used in conjunction with ``autofit'', it can a powerful way to find interesting new classes that are available for users to try.
-    \item The Skedge DSQL includes sorting by class size---useful for students trying to find smaller, discussion based classes---or by class starting time---for students with preferences of morning or afternoon/evening classes.
+    \item SkedgeQL includes the ``new'' keyword, which qualifies an accompanying search by only displaying the courses that were not offered the previous year for that term. For instance, searching ``new csc'' today (Fall 2016) would show Fall Computer Science courses that have been added to the catalog or changed since Fall 2015.
+    \item SkedgeQL could include an ``autofit'' keyword, which would take into account the user's current schedule, and only show sections that would not conflict with any already scheduled times.\footnote{This feature is under development and is not currently live.}
+    \item SkedgeQL includes the ``random'' keyword, which displays a single random course matching the accompanying query. For instance, ``random csc'' would show a random course in Computer Science for the current term. Used in conjunction with ``autofit'', it can a powerful way to find interesting new classes that are available for users to try.
+    \item SkedgeQL includes sorting by class size---useful for students trying to find smaller, discussion based classes---or by class starting time---for students with preferences of morning or afternoon/evening classes.
     \item Instructor names appearing in courses automatically link to searches for more courses taught by that instructor, which is easier than having to use the CDCS ``instructor'' field to make a separate search.
 
   \end{enumerate}
