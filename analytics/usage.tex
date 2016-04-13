@@ -1,7 +1,7 @@
 
 \section{Usage}
 
-In this section, I will address many of the features listed in Chapter 2 (Design) and demonstrate their usability. As an overview, since November 3, 2015 (159 days ago), Skedge has seen\ldots
+In this section, I will address many of the features listed in Chapter 2 (Design) and demonstrate their usability. To date, Skedge has seen\ldots
 
 \vspace{5pt}
 
@@ -10,7 +10,7 @@ In this section, I will address many of the features listed in Chapter 2 (Design
   \hline
   4,713 users that have added or bookmarked at least one course \\ 
   5,256 schedules, with an average of 5.13 and median of 5 sections per schedule \\ 
-  17,124 sessions, 75\% of which are from returning visitors \\ 
+  75\% of sessions from returning visitors \\ 
   107 sessions averaged per day \\ 
   5.4 pages viewed averaged per session  \\ 
   6 minutes spent averaged per session \\ 
@@ -18,12 +18,9 @@ In this section, I will address many of the features listed in Chapter 2 (Design
 \end{tabular}
 \end{center}
 
-\noindent The figure of 4,713 total users may be a little misleading for the following reasons:
+\noindent The figure of 4,713 total users may be misleading because, as explained in Chapter 3, if a user resets their browser cookies or changes browsers or devices, this registers as a distinct visitor. Unfortunately, even analytics tools that track unique visitors rely on cookies as well.
 
-\begin{itemize}
-  \item It includes users who have graduated (class of 2014 and class of 2015)
-  \item It 
-\end{itemize}
+In an attempt to exclude ``stale users,'' we can time-constrain our analysis. In the past month, there were 1,416 visitors to the site and 672 visitors \emph{with schedules}. However, this metric excludes data from seniors who did not have need for Skedge in the past month. Going back to November 3, 2015, course registration day ($\sim$5 months ago), we find 4,647 visitors to the site and 1322 visitors with schedules. Thus, we can estimate that the amount of users who have added courses with Skedge is about \textbf{one-fifth} of all undergraduates (6,046) at the College.
 
 \subsection{Search}
 
@@ -32,12 +29,12 @@ In this section, I will address many of the features listed in Chapter 2 (Design
 
   \includegraphics[width=1.0\textwidth]{images/graph/searches}
 
-  \caption{Searches over time, with major relevant calendar events annotated}
+  \caption{Searches over the period Oct 19 2015 to Apr 11 2016, annotated with major events}
   \label{fig:searches}
 
 \end{figure}
 
-Figure \ref{fig:searches} shows user search submissions over the time, and makes the periodicity of Skedge usage extremely apparent. Although it only shows a bit more than one ``phase,'' the cycle of events---\emph{semester begins} (students check course times, room locations, etc. while they get accustomed to the semester), \emph{next semester's course catalog released} (students explore the courses offered and build possible schedules), \emph{next semester registration opens} (cross-checking and officially registering each course with the Registrar)---clearly drives the majority of site traffic.
+Figure \ref{fig:searches} shows searches over time, and makes the periodicity of Skedge usage extremely apparent. Although there is only enough data for a bit more than one ``phase,'' the cycle of events---\emph{semester begins} (students check course times, room locations, etc. while they get accustomed to the semester), \emph{next semester's course catalog released} (students explore the courses offered and build possible schedules), \emph{next semester registration opens} (cross-checking and officially registering each course with the Registrar)---clearly drives the majority of site traffic.
 
 What this means is that Skedge is not seen as an experiment or a proof of concept that is not production-ready. Rather, its traffic patterns show that it is consistenly \emph{relied upon} by students and used for its intended purpose in times of biggest course scheduling need.
 
@@ -62,7 +59,7 @@ Figure \ref{fig:searchtypes} validates the hypothesis made in Section 2.3 regard
 
   Of the total 45,466 searches on Skedge logged since November 2nd 2015, 89.4\% (40,625) of searches produce nonempty search results, whereas 10.6\% (4,841) of searches come up empty.
 
-  This already is evidence of an effective search mechanism, but of those empty searches, the vast majority (92\%) contain typos or are for courses that simply don't exist. The other significant portion of searches include instructor names without the requisite ``taught by'' for SkedgeQL to pick it up as an instructor search, and such a fix could easily be made.
+  This already is evidence of an effective search mechanism, but of those empty searches, the vast majority contain typos or are for courses that simply don't exist. The other significant portion of searches include instructor names without the requisite ``taught by'' for SkedgeQL to pick it up as an instructor search, and this issue could easily be fixed.
 
   This type of analysis can powerfully indicate holes in the query language (i.e. searches intuitive for users) that ought to be fixed, which is the same method WolframAlpha describes its team using to improve their freeform input system \cite{wolfram2}. Table \ref{fig:empty-queries} lists a few notable examples of this nature. (Table \ref{fig:funny-queries} lists a few funny queries I came across.)
 
