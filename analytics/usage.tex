@@ -53,7 +53,7 @@ The usability of and user satisfaction with a tool is hard to measure when it ho
   \end{figure}
 
 
-Figure \ref{fig:searchtypes} validates the hypothesis made in Section 2.3 regarding the search interface design, demonstrating that the \emph{department code} and \emph{course number} search modes dominate user searches, accounting for over 85\% of all searches on Skedge. Bringing the nondistinct field for this in CDCS into prominence is thus a design choice that accomodates empirical usage behavior.
+Figure \ref{fig:searchtypes} validates the hypothesis made in Section 2.3 regarding the search interface design, demonstrating that the \emph{department code} and \emph{course number} search modes dominate user searches, accounting for over 85\% of all searches on Skedge. Bringing the nondistinct field for this in CDCS into prominence is thus a design choice that accomodates empirical behavior.
 
 \subsubsection{Empty searches}
 
@@ -61,7 +61,7 @@ Figure \ref{fig:searchtypes} validates the hypothesis made in Section 2.3 regard
 
   This already is evidence of an effective search mechanism, but of those empty searches, the vast majority contain typos or are for courses that simply don't exist. The other significant portion of searches include instructor names without the requisite ``taught by'' for SkedgeQL to pick it up as an instructor search, and this issue could easily be fixed.
 
-  This type of analysis can powerfully indicate holes in the query language (i.e. searches intuitive for users) that ought to be fixed, which is the same method WolframAlpha describes its team using to improve their freeform input system \cite{wolfram2}. Table \ref{fig:empty-queries} lists a few notable examples of this nature. (Table \ref{fig:funny-queries} lists a few funny queries I came across.)
+  This type of analysis is powerful, as it can raise issues in the query language (i.e. searches I didn't implement but that users expect to work) with specific fixes. This is the same method WolframAlpha describes its team using to improve their freeform input system \cite{wolfram2}. Table \ref{fig:empty-queries} lists a few notable examples of this nature. (Table \ref{fig:funny-queries} lists a few funny queries I came across.)
 
 \subsection{Exports}
 
@@ -72,10 +72,16 @@ In Section 2.2.5 (on the design of Skedge's schedule exporting), a major usabili
 Figure \ref{fig:linksearches} shows the amount of clicks on the Wikipedia-style embedded links throughout Skedge (instructor names link to other courses they are teaching, prerequisite and crosslist course mentions link to those courses). The number of manual instructor searches is also included for comparison, which can be seen to be vastly less usable than the analogous link-click, which doesn't exist in CDCS. Additionally, link-clicks also possibly offer a different functionality (e.g. in the course browsing paradigm).
 
 \singlespacing
-{\renewcommand{\arraystretch}{1.5}
+{\renewcommand{\arraystretch}{1.75}
 \begin{center}
 \begin{table}[H]
+\vspace{5pt}
   \begin{tabular}{ p{6cm} p{7.5cm} }
+
+    {\large Empty search examples}
+    & {\large Specific fix to SkedgeQL required} \\
+
+    \hline
   \hline
 
     ``{\tt Prereq 280}'' \newline ``{\tt has-Prereq: 280}''
@@ -111,37 +117,39 @@ Figure \ref{fig:linksearches} shows the amount of clicks on the Wikipedia-style 
     ``{\tt MTH 2*}'' \newline ``{\tt csc 2xx}''
     & Using ``{\tt *}'' or ``{\tt x}'' instead of an omission (e.g. searching ``{\tt MTH 2}'' would work for this purpose) \\ \hline
 
-    \hline
   \end{tabular}
   \caption{Example of search queries that produced no results but that indicate demand for added search features. The corresponding features that currently lack in SkedgeQL are described on the right.}
   \label{fig:empty-queries}
 \end{table}
 
-\vspace{30pt}
+\vspace{5pt}
 
 \begin{table}[H]
-  \begin{tabular}{ | p{4cm} | p{4cm} | p{4cm} | }
-  \hline
+  \centering
+  \begin{tabular}{ l l l }
 
-    ``{\tt Larry david}''
+    \hline
+
+    ``{\tt why 123}''
     & ``{\tt taught by seligman}''
     & ``{\tt cool stuff}''
-    \\ \hline
+    \\ 
 
-    ``{\tt game of thrones}''
+    ``{\tt psy cool professor}''
     & ``{\tt interesting courses}''
     & ``{\tt fun classes in csc}''
-    \\ \hline
-    
+    \\ 
 
     ``{\tt easy A}''
     & ``{\tt flute birdman}''
     & ``{\tt how do i make a new schedule}''
-    \\ \hline
+    \\ 
 
     \hline
+
   \end{tabular}
-  \caption{Humorous search submissions}
+  \vspace{10pt}
+  \caption{A sample of humorous searches}
   \label{fig:funny-queries}
 \end{table}
 \end{center}
