@@ -124,37 +124,32 @@ A \emph{high} percentage of users with \emph{first increase} and \emph{second in
 
 \subsection{Trends}
 
-\begin{figure}
+\subsubsection{Analysis of users with search complexity increases}
+
+\begin{figure}[H]
   \centering
-  \vspace{-10pt}
-
-  \begin{subfigure}[w]{0.85\textwidth}
-    \includegraphics[width=1.00\textwidth]{images/graph/search_dt}
-    
-    \caption{Etc}
-    \label{fig:sc-graph}
-  \end{subfigure}
-
-  \\
-  \vspace{30pt}
-
-  \begin{subfigure}[w]{0.75\textwidth}
-    \includegraphics[width=1.00\textwidth]{images/graph/search_dt_pie}
-
-    \caption{Etc}
-    \label{fig:sc-pie}
-  \end{subfigure}
-
-  \caption{Etc}
+  \includegraphics[width=0.9\textwidth]{images/graph/search_dt}
+  
+  \caption{User-tracked search complexity over time}
+  \label{fig:sc-graph}
 \end{figure}
 
-The blue line in Figure \ref{fig:sc-graph} plots the number of users 
+The blue line in Figure \ref{fig:sc-graph} plots the number of users that had their \emph{first increase} in search complexity per search index (searches \#16--\#25 represent 47 users, and 26+ searches represents only 29 users). The green line plots the number of users for a \emph{second increase} at the given search index (searches \#16--\#25 represent 35 users, and 26+ searches represents 32).
 
-First increase 69.4\% of users), with a median of 2 searches.
-Note that starting at search complexity one or greater counts as a ``searches before first increase value'' of 0.
+The amount of users whose first searches are of nonzero complexity may be surprising. The vast majority of these are \textbf{title} searches however, which \emph{are} included in the ``complex'' field table. This is purposeful---title searches only represent 8\% of all search field uses, as we saw in Figure \ref{fig:searchtypes} of the section before last. Moreover, a user's understanding and/or intuition that the Skedge search field is free-form and can be used for different search fields simultaneously is already a significant conceptualization of SkedgeQL, albeit a relatively basic field.
 
-Second increase (7.9\% of users)
-Median: 8 searches
-Average: 17.52 searches
+\subsubsection{Users with increases vs. users without increases}
 
-DSQL++
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.9\textwidth]{images/graph/search_dt_pie}
+
+  \caption{Users with a schedule and more than one search split by their number of increases in search complexity}
+  \label{fig:sc-pie}
+\end{figure}
+
+\vspace{5pt}
+
+Figure \ref{fig:sc-pie} shows that 69.4\% of Skedge users (\emph{users} here defined as having at least one course bookmarked or added to a schedule, with more than two searches since November 3rd---there are 1889 such users in total) have increased their record search complexity at least once, with a median of 2 searches to do so. Of those users, 18\% of them (12\% of total users) have had a \emph{second} increase in search complexity, with a median of 10 searches to do so. 30\% of users have only searched with the department and course number fields.
+
+I believe this is a strong model for evaluating the friendliness and low learning curve of SkedgeQL, and the results are certainly promising, although further analysis on beginning with nonzero search complexity is needed.
