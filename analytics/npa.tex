@@ -37,7 +37,7 @@ Considering the hypothesis claimed in Section 2.3.2 (that course selection crite
     \centering
     \includegraphics[width=1.0\textwidth]{images/graph/direct_navs}
 
-    \caption{Frequency of navigations-per-adds when the goal was to add a specific course}
+    \caption{Frequency of navigations-per-adds when the goal was to \emph{add a specific course}}
     \label{fig:navs-direct}
   \end{figure}
 
@@ -51,18 +51,19 @@ Considering the hypothesis claimed in Section 2.3.2 (that course selection crite
 
 \subsection{Browse (elective criteria)}
 
-  Browsing behavior was done as a direct inverse of  harder to detect than direct search behavior, because there  query behavioral patterns
-  Discovery, browsing, exploring
-
   \begin{figure}
     \centering
     \includegraphics[width=1.0\textwidth]{images/graph/browsed_navs}
 
-    \caption{Frequency of navigations-per-adds/bookmarks when the goal was to browse for courses}
-    \label{fig:searchtypes}
+    \caption{Frequency of navigations-per-add/bookmark when the goal was to \emph{browse for courses}}
+    \label{fig:navs-browse}
   \end{figure}
 
-  As expected, the 0-navs were mostly maincourses (62\%)
+  Browsing behavior was done as a direct inverse of direct searches, detecting searches that didn't specifically target any courses. This time, bookmarks were also counted in a user's flow of events (i.e. they are treated the same as an add), because bookmarking is also a goal of course browsing behavior.
+
+  The results are shown in Figure \ref{fig:navs-browse}. The difference between these results and the initial combined results of \ref{fig:navs-combined} are more substantial than last time, and may defy expectations at first glance. While it may seem intuitive that browsed-for courses should have higher amounts of navigations, note that the graph itself is showing \emph{effectiveness} of such browsing. In this case, it makes sense that a significantly higher proportion of adds/bookmarks occur within zero navigations, because that indicates a high-level search and subsequent adds/bookmarks from that list instead of moving on to another search.
+
+  As expected, and unlike the results of further direct-search analysis, the sections added/bookmarked when browsing within 0 navigations were mostly \emph{main} sections (only 37\% of them were subsections). This makes sense, as users may not be concerned with subsections if the goal of the browse is merely to mark interesting courses. This criterion saw more drastic drops in subsection amounts as well, as the number of navs increased: 5\% subsections for ${navs}=1$, and 4\% subsections for ${navs}=2$.
 
 \subsection{Peer-guided (recommendation criteria)}
 
