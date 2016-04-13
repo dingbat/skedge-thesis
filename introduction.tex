@@ -1,32 +1,13 @@
 
 \chapter{Introduction}
 
-In this paper, I am proud to finally introduce the world to \emph{Skedge}, a website I have been developing in various degrees since December 9th, 2013. Skedge began as a weekend side-project for me after spending too much time frustrated with existing tools while trying to find myself a second major to pursue. It wasn't until I briefly presented it at an on-campus RocHack meeting when I realized it had potential to help other students as well, but since, it has always existed in the shadows and in continual ``beta''---unofficial, unsupported and dodging recognition. Until two summers ago, I had never expected it to end up being the subject of my honors senior thesis, so this opportunity represents a rather special privilege for me and, selfishly, an outlet for recognition.
+\vspace{-20pt}
+
+I am proud to finally, officially introduce the world to \emph{Skedge}, a website I have been developing since December 2013. It began as a weekend project after I spent too much time trying to find interesting elective classes, and it wasn't until I briefly presented it at a RocHack ``Hacker Night'' when I realized the potential it had to help others as well. I never expected the subject of my senior thesis to be something so close to my heart, so I am grateful for such a fun and motivating opportunity to continue work on Skedge, and, selfishly, for the outlet of recognition.
 
 \section{Overview of CDCS}
 
-``Course Description / Course Schedule,'' (or \emph{CDCS} for short) is the University's official tool for browsing through the University's current course catalog. 
-
-\label{fig:cdcs-index}
-
-\subsection{``Better CDCS''}
-
-%%%
-
-\section{Overview of Skedge}
-
-Skedge is a website on which I started rapid development on , and have been developing it on and off since.
-
-Bookmarks
-
-Students, parents, department coordinators, and faculty can all benefit from such tool improvements.
-
-user accounts are lightweight, no login, cookie (browser) based
-
-\ref{fig:sk-index}
-
-
-\begin{figure}[ht]
+\begin{figure}
     \centering
         \begin{subfigure}[h]{14cm}
             \centering
@@ -48,7 +29,20 @@ user accounts are lightweight, no login, cookie (browser) based
     \caption{CDCS and Better CDCS in their current states}
 \end{figure}
 
-\begin{figure}[ht]
+
+``Course Description / Course Schedule,'' (or \emph{CDCS} for short) is the University's official tool for browsing the University's current course catalog \cite{cdcs}.  
+
+The CDCS interface consists of a series of form fields for inputting search queries on the left, and search results on the right side (see Figure \ref{fig:cdcs-index}). Despite ``Course Schedule'' being in its name, CDCS does not offer scheduling functionality. Only course times can viewed, and it is up to the user to keep track of the courses they are considering for their next semester.
+
+\subsection{``Better CDCS''}
+
+Better CDCS \cite{better-cdcs} is a browser extension, available for Firefox, Safari, and Chrome, that offers a solution to the lack of scheduling mentioned above. It works by injecting ``Add Section'' and ``Bookmark Section'' buttons into the existing CDCS interface, and providing a tab on top of the screen that will toggle between the user's schedule and the search results (see Figure \ref{fig:cdcs-better}).
+
+%%%
+
+\section{Overview of Skedge}
+
+\begin{figure}[H]
     \centering
     \fbox{
         \includegraphics[width=1.00\textwidth]{images/skedge/index}
@@ -56,3 +50,12 @@ user accounts are lightweight, no login, cookie (browser) based
     \caption[Skedge with the search query {\tt csc}]{Skedge with the search query {\tt csc} and the user's current schedule on the right}
     \label{fig:sk-index}
 \end{figure}
+
+Skedge \cite{skedge} is, in short, CDCS combined with Better CDCS on a single platform (see Figure \ref{fig:sk-index}). Like CDCS, it is lightweight, service-oriented, and doesn't require a login, but unlike CDCS, it doesn't require a separate browser extension.
+
+It matches feature-for-feature with the two tools (search options, information displayed, scheduling and course bookmarks, etc.), and aims to improve upon the work of both of them on several fronts, which will be investigated in this paper in great detail. It is my contention that students, parents, faculty, staff, and administration can all benefit from such improvements.
+
+\vspace{20pt}
+
+\noindent
+This paper is organized in two parts, with a brief intermission in between. First, I will explain many of Skedge's design decisions in relation to what I call my ``grievances'' with CDCS in its current state. The second part will look at collected data, extrapolating how students use Skedge and using several novel metrics to measure its usability and effectiveness as a platform.
