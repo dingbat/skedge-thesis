@@ -3,40 +3,152 @@
 
 \subsection{Definitions}
 
-Points for search by (omits number and dept.):
+The \textbf{complexity} of a search query is the number of fields that aren't course number or department that it spans (the accepted fields are shown in Table \ref{fig:sc-fields}).
 
-description
-credits
-crosslisted
-CRN
-instructor
-title
-year
-term
-‘random’
-upper-level writing
+\singlespacing
+\begin{center}
+\begin{table}[H]
+  \centering
+  \begin{tabular}{ lllll }
 
-“CSC” → 0
-“MTH 165” → 0
-“taught by hema” → 1   ✓    (2 searches) 
-“random mur 1-2 credits” → 2   ✓    (1 search) 
+    \hline
 
+    description
+    & title
+    & credits
+    & crosslisted
+    & CRN
+    \\
+
+    
+    instructor
+    & year
+    & term
+    & upper-level writing
+    & random
+    \\
+
+    \hline
+
+  \end{tabular}
+  \vspace{10pt}
+  \caption{``Complex'' search fields (omits only number and department)}
+  \label{fig:sc-fields}
+\end{table}
+\end{center}
+\doublespacing
+
+\noindent We can compute the number of searches it takes a user to reach a new highest search complexity record since the previous record. See Table \ref{fig:sc-example} for an illustrative example.
+
+A user's \textbf{first increase in search complexity} is defined as the number of searches a user made before searching with complexity greater than zero. If a user's first search has complexity 1, the user's \emph{first increase} is 0.
+
+A user's \textbf{second increase in search complexity} is defined as the number of searches a user made before searching with complexity greater than their \emph{first increase}'s search complexity.
+
+It is possible that user have neither, both, or only a \emph{first increase} metric.
+
+{\renewcommand{\arraystretch}{2.0}
+\singlespacing
+\begin{center}
+\begin{table}[H]
+  \centering
+  \begin{tabular}{ r | c c c | l }
+
+    Query no.
+    & Search query
+    &
+    & Complexity
+    & Searches till increase \\
+
+    \hline
+
+    \#1
+    & ``{\tt CSC}''
+    & \rightarrow
+    & 0
+    & 
+    \\
+
+    \#2
+    & ``{\tt MTH 165}''
+    & \rightarrow
+    & 0
+    & 
+    \\
+
+    \#3
+    & ``{\tt csc taught by guo}''
+    & \rightarrow
+    & 1
+    & $3-1=\textbf{2}$ \hspace{2pt} \emph{(first increase)}
+    \\
+
+    \#4
+    & ``{\tt random mur 1-2 credits}''
+    & \rightarrow
+    & 2
+    & $4-3=\textbf{1}$ \hspace{2pt} \emph{(second increase)}
+    \\
+
+  \end{tabular}
+  \vspace{10pt}
+  \caption{Illustration of computing the number of searches before a complexity increase}
+  \label{fig:sc-example}
+\end{table}
+\end{center}
+\doublespacing
+
+
+\subsection{Motivation}
+
+The purpose of this metric is to determine the usability and learning curve of SkedgeQL. The two ways Skedge currently offers to teach users about its query language are
+
+\begin{enumerate}
+  \item  by providing a table of example queries whenever the user clicks inside the search field from the Skedge homepage (see Figure \ref{fig:sk-search2}), and
+
+  \item  from embedded links on the site making searches with high complexity and implicitly demonstrating them to users by using the same input field they use to submit searches.\footnote{Clicking on an instructor's name, for instance, makes the advanced search ``for the user.'' Another example is clicking on a course box in the side schedule, which searches for that course code along with its term and year (e.g. ``{\tt CSC 171 Fall 2016}'').
+
+  Other possibilities include linking the credits field of each course to a credits search, the CRN field of a section to a CRN search, the ``{\tt W}'' part of the course code to an upper-level writing search, having a crosslisted course link search the crosslisting of the two departments (instead of directly link to the crosslisted course), a ``feeling lucky?'' button for a search with ``{\tt random}''.}
+\end{enumerate}
+
+\begin{figure}[H]
+  \centering
+  \fbox{
+    \includegraphics[width=0.65\textwidth]{images/skedge/search}
+  }
+  \caption{Examples of SkedgeQL} \label{fig:sk-search2}
+\end{figure}
+
+\noindent The latter method is, of course, much preferred to the former as it teaches without requiring concerted effort on the part of the user to study and learn the query language, and mostly likely remains more memorable and intuitive as a result.
+
+A \emph{high} percentage of users with \emph{first increase} and \emph{second increase} metrics, with \emph{low} mean and median values for those increases would be desirable. This would strongly indicate the effect of teaching method \#2 because the factor in teaching users about the query language would simply be time (besides the case of users becoming curious about advanced search types and looking them up explicitly, which is difficult to account for because the query example box is shown to all users fairly regularly).
 
 \subsection{Trends}
 
 \begin{figure}
   \centering
+  \vspace{-10pt}
 
-  \includegraphics[width=1.00\textwidth]{images/graph/search_dt}
+  \begin{subfigure}[w]{0.85\textwidth}
+    \includegraphics[width=1.00\textwidth]{images/graph/search_dt}
+    
+    \caption{Etc}
+    \label{fig:sc-graph}
+  \end{subfigure}
 
   \\
   \vspace{30pt}
 
-  \includegraphics[width=0.65\textwidth]{images/table/search_dt}
+  \begin{subfigure}[w]{0.75\textwidth}
+    \includegraphics[width=1.00\textwidth]{images/graph/search_dt_pie}
+
+    \caption{Etc}
+    \label{fig:sc-pie}
+  \end{subfigure}
 
   \caption{Etc}
-  \label{fig:searchtypes}
 \end{figure}
+
+The blue line in Figure \ref{fig:sc-graph} plots the number of users 
 
 First increase 69.4\% of users), with a median of 2 searches.
 Note that starting at search complexity one or greater counts as a ``searches before first increase value'' of 0.
