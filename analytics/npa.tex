@@ -1,25 +1,34 @@
 
-\section{Effectiveness}
+\section{Effectiveness as a platform \& navigations-per-add}
 
 \subsection{Definitions}
 
-A navigation is defined as
-a search, or
-a click on an instructor’s name, or
-a click on a crosslisted or prerequisite course link
+A \textbf{navigation} is defined as
 
-The navigations-per-add measure is
-the number of navigations a user took (within one session) until a course was added, bookmarked
+\onehalfspacing
+\begin{itemize}
+  \item a search, or
+  \item a click on an instructor’s name, or
+  \item a click on a crosslisted or prerequisite course link
+\end{itemize}
+\doublespacing
+
+\noindent The \textbf{navigations-per-add} metric is the number of navigations taken by a user (within one session) before a section was added. 
+
+To illustrate this metric, imagine that a user searches for ``{\tt csc}'' (one navigation so far) and begins to scroll through the list of courses. The user sees that Philip Guo is teaching CSC 210 and clicks on his name (two navigations so far), and then adds the section for CSC 210. \emph{A navigations-per-add of 2 is tallied for that user}. The user then clicks on the prerequisite for that class, CSC 172 (one navigation so far), and adds it. \emph{A navigations-per-add of 1 is tallied for that user}. The user then opens the list of labs embedded in 172 and adds one of them. \emph{A navigations-per-add of 0 is tallied for that user.} (Note that a value of 0 can also occur when a user scrolls through a list of courses and adds more than one of them without leaving the page.)
 
 \subsection{Trends}
 
-\begin{figure}[H]
+\begin{figure}
   \centering
   \includegraphics[width=1.0\textwidth]{images/graph/combined_navs}
 
-  \caption{Etc}
-  \label{fig:searchtypes}
+  \caption{Frequency of different navigations-per-add values}
+  \label{fig:navs-combined}
 \end{figure}
+
+Figure \ref{fig:navs-combined} takes the navigations-per-add for every time a course was ever added by any Skedge user.
+
 
 \subsection{Breaking them apart}
 
@@ -43,7 +52,7 @@ the number of navigations a user took (within one session) until a course was ad
 
   \begin{figure}
     \centering
-    \includegraphics[width=1.0\textwidth]{images/graph/browse_navs}
+    \includegraphics[width=1.0\textwidth]{images/graph/browsed_navs}
 
     \caption{Etc}
     \label{fig:searchtypes}
