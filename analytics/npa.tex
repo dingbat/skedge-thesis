@@ -17,7 +17,7 @@ A \textbf{navigation} is defined as
 
 To illustrate this metric, imagine that a user searches for ``{\tt csc}'' (one navigation so far) and begins to scroll through the list of courses. The user sees that Philip Guo is teaching CSC 210 and clicks on his name (two navigations so far), and then adds the section for CSC 210. \emph{A navigations-per-add of 2 is tallied for that user}. The user then clicks on the prerequisite for that class, CSC 172 (one navigation so far), and adds it. \emph{A navigations-per-add of 1 is tallied for that user}. The user then opens the list of labs embedded in 172 and adds one of them. \emph{A navigations-per-add of 0 is tallied for that user.} (Note that a value of 0 can also occur when a user scrolls through a list of courses and adds more than one of them without leaving the page.)
 
-\subsection{Trends}
+\subsection{General trends}
 
 \begin{figure}
   \centering
@@ -27,35 +27,43 @@ To illustrate this metric, imagine that a user searches for ``{\tt csc}'' (one n
   \label{fig:navs-combined}
 \end{figure}
 
-Figure \ref{fig:navs-combined} shows the navigations-per-add breakdown for every time a section was added in Skedge. With 40\% of  
+Figure \ref{fig:navs-combined} shows the navigations-per-add breakdown for every time a section was added in Skedge. With 40\% of sections added in zero navigations and 39\% added within one navigation, it is immediately apparent that Skedge delivers users the content they look for in the vast majority of cases, assuming that the intention of the user was to add a course.
 
+Considering the hypothesis claimed in Section 2.3.2 (that course selection criteria can be broken down to \emph{requirements}, \emph{electives}, and \emph{peer recommendations}), however, we ought examine if data for different use-cases are being conflated in this chart.
 
-\subsection{Breaking them apart}
-
-  behavioral patterns
-  Direct search for specific course
-  Discovery, browsing, exploring
-
-  \subsubsection{Direct searches}
+\subsection{Direct search (requirement criteria)}
 
   \begin{figure}
     \centering
     \includegraphics[width=1.0\textwidth]{images/graph/direct_navs}
 
-    \caption{Etc}
-    \label{fig:searchtypes}
+    \caption{Frequency of navigations-per-adds when the goal was to add a specific course}
+    \label{fig:navs-direct}
   \end{figure}
 
-  Why would 0-navs be so common with direct searches? 64\% of them subsections!
+  Direct searches are easy to distinguish, as we can take the subset of search queries that target a specific course, namely, those that \textbf{a)} contain both department and course code fields (e.g. ``{\tt csc 171}''), or \textbf{b)} contain a title field (``{\tt intro to programming}''). Figure \ref{fig:navs-direct} shows the navigations-per-add when, under this criteria, the user's goal was to add a specific course.
 
-  \subsubsection{Browse}
+  The difference between these results and those in \ref{fig:navs-combined} is suble but logical. Users searching for a specific course should have an increased proportion of 1-navigation adds, as the graph shows, because the use-case is \emph{search for course}, \emph{add course}, perhaps occasionally taking an extra try to account for typos, not knowing the title or course code exactly, etc.
+
+  But given this reasoning, why would 0-navigation adds still be so common in direct searches? Further analysis on only the sections that were added from direct search and with 0 navigations shows that 64\% of those sections are in fact \emph{subsections}. As happened in the illustrative example at the beginning of this section, this shows that a very common use-case is to add labs, workshops, etc. of a course directly after adding the main section.
+
+  This hypothesis is further confirmed by doing the same analysis for ${navs}=1$ and ${navs}=2$, when the inverse behavior would be expected (it makes sense for subsections which were added seperately from their main sections to be more rate). Only 11\% of sections that were added from a direct search after 1 navigation are subsections, and that number drops to 8\% for 2 navigations.
+
+\subsection{Browse (elective criteria)}
+
+  Browsing behavior was done as a direct inverse of  harder to detect than direct search behavior, because there  query behavioral patterns
+  Discovery, browsing, exploring
 
   \begin{figure}
     \centering
     \includegraphics[width=1.0\textwidth]{images/graph/browsed_navs}
 
-    \caption{Etc}
+    \caption{Frequency of navigations-per-adds/bookmarks when the goal was to browse for courses}
     \label{fig:searchtypes}
   \end{figure}
 
   As expected, the 0-navs were mostly maincourses (62\%)
+
+\subsection{Peer-guided (recommendation criteria)}
+
+  :(
