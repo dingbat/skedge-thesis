@@ -40,9 +40,9 @@ Figure \ref{fig:searches} shows searches over time, and makes the periodicity of
 
 What this means is that Skedge is not seen as an experiment or a proof of concept that is not production-ready. Rather, its traffic patterns show that it is consistenly \emph{relied upon} by students and used for its intended purpose in times of biggest course scheduling need.
 
-It should also be noted that before March, the majority of the userbase as I knew it consisted of seniors, as the majority of people that I knew personally and shared Skedge with belonged to my class. The latest two major events reported in the graph above thus very impressively consist of \emph{very few seniors}, who have no courses left to schedule. March also marked the very first time I publicly advertised Skedge, although not very strongly. It was sent out to all students in the Computer Science mailing list as well as posted to two class-wide Facebook groups.
+It should also be noted that before March, the majority of the userbase as I knew it consisted of seniors, as the majority of people that I knew personally and shared Skedge with belonged in my class year. The latest two major events reported in the graph above thus very impressively consist of \emph{very few seniors}, who have no courses left to schedule. March also marked the very first time I publicly advertised Skedge, although not very strongly. It was sent out to all students in the Computer Science mailing list as well as posted to two class-wide Facebook groups.
 
-The usability of and user satisfaction with a tool is hard to measure when it holds a monopoly. Considering that Skedge is an \emph{optional alternative} to CDCS, such consistent usage data (especially with 75\% of sessions being from returning users) undeniably prove its measures of usability and user satisfaction relative to CDCS.
+The usability of and user satisfaction with a tool is hard to measure when it holds a monopoly. Considering that Skedge is an \emph{optional alternative} to CDCS, such consistent usage data (especially with 75\% of sessions being from returning users) undeniably proves its measures of usability and user satisfaction relative to CDCS.
 
   \subsubsection{Search types}
 
@@ -55,13 +55,13 @@ The usability of and user satisfaction with a tool is hard to measure when it ho
   \end{figure}
 
 
-Figure \ref{fig:searchtypes} validates the hypothesis made in Section 2.3 regarding the search interface design, demonstrating that the \emph{department code} and \emph{course number} search modes dominate user searches, accounting for over 85\% of all searches on Skedge. Bringing the nondistinct field for this in CDCS into prominence is thus a design choice that accomodates empirical behavior.
+Figure \ref{fig:searchtypes} validates the hypothesis made in Section 2.3 regarding the search interface design, demonstrating that the \emph{department code} and \emph{course number} search modes dominate user searches, accounting for over 85\% of all search types on Skedge. Bringing the nondistinct field for this in CDCS into prominence is thus a design choice that accomodates empirical behavior.
 
 \subsubsection{Empty searches}
 
   Of the total 45,466 searches on Skedge logged since November 2nd 2015, 89.4\% (40,625) of searches produce nonempty search results, whereas 10.6\% (4,841) of searches come up empty.
 
-  This already is evidence of an effective search mechanism, but of those empty searches, the vast majority contain typos or are for courses that simply don't exist. The other significant portion of searches include instructor names without the requisite ``taught by'' for SkedgeQL to pick it up as an instructor search, and this issue could easily be fixed.
+  This already is evidence of an effective search mechanism, but of those empty searches, the vast majority contain typos or are for courses that simply don't exist. The other significant portion of searches include instructor names without the requisite ``{\tt taught by}'' for SkedgeQL to pick it up as an instructor search, and this issue could easily be fixed.
 
   This type of analysis is powerful, as it can raise issues in the query language (i.e. searches I didn't implement but that users expect to work) with specific fixes. This is the same method WolframAlpha describes its team using to improve their freeform input system \cite{wolfram2}. Table \ref{fig:empty-queries} lists a few notable examples of this nature. (Table \ref{fig:funny-queries} lists a few funny queries I came across.)
 
@@ -181,7 +181,7 @@ Figure \ref{fig:linksearches} shows the amount of clicks on the Wikipedia-style 
 
 \subsection{Mobile}
 
-Making the case for usability superior to CDCS's in the space of mobile support is easy, given that CDCS does not have a mobile-responsive website. But to illustrate the importance of ensuring good user experience on mobile devices, consder that 11.54\% of all Skedge sessions are from mobile devices, which is very substantial. On average, 2.74 pages viewed are viewed and 2 minutes are spent per session on mobile devices.
+Making the case for usability superior to CDCS's in the space of mobile support is easy, given that CDCS does not have a mobile-responsive website. But to illustrate the importance of ensuring good user experience on mobile devices, note that 11.54\% of all Skedge sessions are from mobile devices, which is very substantial. On average, 2.74 pages viewed are viewed and 2 minutes are spent per session on mobile devices.
 
 The nature of the content also makes Skedge commonly accessed on the go---quickly looking up room numbers while heading to class, for instance, or checking a friend's schedule on Skedge Social to meet them after a class, etc. There is still work to be done to determine the usability of Skedge's mobile site in particular. Surveys could be a good indicator, but I didn't have the chance to administer any.
 
@@ -219,7 +219,7 @@ Since March 1st (40 days), based on 963 sessions on {\tt /social}, Skedge Social
   }
 
   \caption[Course blocks in Skedge]{Hovering over a course block in Skedge's side-schedule shows at-a-glance information about it; clicking on it navigates the user to that course}
-  \label{fig:searchtypes}
+  \label{fig:courseblocks}
 
 \end{figure}
 

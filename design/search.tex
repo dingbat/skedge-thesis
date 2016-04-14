@@ -5,7 +5,7 @@ The most important usability concern of all for a course explorer/scheduler is b
 
 \subsection{Natural language search}
 
-In the spirit of this chapter's theme, Skedge's search method was, again, primarily designed as a reaction to CDCS's. CDCS's search method is a 15-field form (see Figure \ref{fig:cdcs-search}), of which I only found myself regularly using two (one of them being the \emph{required} ``Year/Term'' field). This prompted me to closely examine the fields to a) determine redundancies between them and b) find how to make some of the valuable filter fields more usable. From this came Skedge's unified, natural language based search method, which I call the Skedge Query Language, or \emph{SkedgeQL}. Figure \ref{fig:sk-search} is a list of example possible searches shown to users as they type.
+In the spirit of this chapter's theme, Skedge's search method was, again, primarily designed as a reaction to CDCS's. CDCS's search method is a 15-field form (see Figure \ref{fig:cdcs-search}), of which I only found myself regularly using two (one of them being the \emph{required} ``Year/Term'' field). This prompted me to closely examine the fields to a) determine redundancies between them and b) find how to make some of the valuable filter fields more usable. From this came Skedge's unified, natural language based search method, which I call the Skedge Query Language, or \emph{SkedgeQL}. Figure \ref{fig:sk-search} is a list of example possible searches shown to users as they type into the searchbox.
 
 \begin{figure}[ht]
   \centering
@@ -27,7 +27,7 @@ In the spirit of this chapter's theme, Skedge's search method was, again, primar
       \caption{Examples of SkedgeQL} \label{fig:sk-search}
     \end{subfigure}
   \end{tabular}
-  \caption{Two philosophies of search method}
+  \caption{Two philosophies of search}
 \end{figure}
 
 \begin{figure}[ht]
@@ -91,7 +91,7 @@ SkedgeQL is enterable using special keywords and, optionally, qualifiers for tho
 
   \subsubsection{Advantages of SkedgeQL}
 
-    The main advantage of Skedge's search system is in its reduction of 15 fields to a single one. I hypothesize that since the vast majority of searches fit the department code / course number pattern (this hypothesis later supported in Chapter 4), the time required to force the user to select a term and then find the correct box to enter this query is wasted.
+    The main advantage of Skedge's search system is in its reduction of 15 fields to a single one. I hypothesize that since the vast majority of searches fit the department code / course number pattern (e.g. ``{\tt csc 171}''---this hypothesis later supported in Chapter 4), the time required to force the user to select a term and then find the correct box to enter this query is wasted.
 
     It has been shown that once learned, natural language based query languages can be faster, more intuitive, and more usable than traditional form-based methods \cite{dsl}. WolframAlpha's hugely successful online free-form search is a notable pioneer in this field \cite{wolfram}.
 
@@ -101,16 +101,16 @@ SkedgeQL is enterable using special keywords and, optionally, qualifiers for tho
 
     One disadvantage of SkedgeQL is the possible grammatical ambiguity of some queries. For instance, the query ``Fall of the Roman Empire'' could be searching for courses with that as the title, or searching for courses in the \emph{fall term} with the title ``of the Roman Empire''. Unless multiple queries are run and more complex natural language processing is done, the system would have a hard time disambiguating between the two. This could also be solved with a ``did you mean?'' feature, which disambiguates a query into every possible SkedgeQL breakup.
     
-    Another notable disadvantage of SkedgeQL is having to know it, and it having a possibly steep learning curve for some users. However, the argument will be made in Chapter 4 that simply by using the site over time, users will self-learn Skedge. One of the ways this is possible is thanks to Skedge's search system being \emph{multi-purposed}. Hyperlinks around the site---instructor names (which link to ``{\tt taught by <name>}''), course references, or schedule course blocks for example---all direct the user to an ordinary search results page with the search field populated, signalling to the user that such a search is possible.
+    Another notable disadvantage of SkedgeQL is having to know it, and it having a possibly steep learning curve for some users. However, the argument will be made in Chapter 4 that simply by using the site over time, users will self-learn SkedgeQL. One of the ways this is possible is thanks to Skedge's search system being \emph{multi-purposed}. Hyperlinks around the site---instructor names (which link to ``{\tt taught by <name>}''), course references, or schedule course blocks for example---all direct the user to an ordinary search results page with the search field populated, signalling to the user that such a search is possible.
 
 
 \subsection{Course selection criteria}
 
-I have identified \emph{three} use-cases for course searching (the existence of and distinction between these cases will be demonstrated with collected usage data in Chapter 4). The three cases are \textbf{requirements}, \textbf{electives}, and \textbf{peer recommendations}. SkedgeQL and other application features offer substantial improvements over CDCS for each of these cases. 
+I have identified \emph{three} use-cases for course searching (the existence of and distinction between these cases will be demonstrated with collected usage data in Chapter 4). The types of courses user look for are \textbf{requirements}, \textbf{electives}, and \textbf{peer recommendations} (associated with direct, exploratory, and peer-guided search, respectively). SkedgeQL and other application features offer substantial improvements over CDCS for each of these cases. 
 
   \subsubsection{Requirements}
 
-  These are courses that are required for a student to complete their degree, and are typically searched for directly. The functionality required here is simple and is mostly satisfied by CDCS, but Skedge offers the following improvements to the process:
+  This is for are courses that are required for a student to complete their degree, and are typically searched for directly. The functionality required here is simple and is mostly satisfied by CDCS, but Skedge offers the following improvements to the process:
 
   \begin{enumerate}
     \item \emph{Crosslisted courses:} For students with more than one major and/or minor, searching for courses that are crosslisted between departments can be valuable in reducing their requirement load. This search filter is unsupported by CDCS, and is supported by Skedge using the operator ``{\tt x}'' (e.g. ``{\tt csc x ece}'' for courses listed under both Computer Science and Electrical \& Computer Engineering departments).
@@ -122,7 +122,7 @@ I have identified \emph{three} use-cases for course searching (the existence of 
 
   \subsubsection{Electives}
 
-  Elective courses can either be courses that are required for a major or minor, but are chosen by the student, or they can be courses of particular interest to students who have the flexibility to take them. For this use-case, Skedge offers search, filter, and sorting features that substantially aid users in browsing through courses and discovering ones they might want to take. Note that none of the following features are supported by CDCS.
+  Elective courses can either be courses that are required for a major or minor, but are chosen by the student, or they can be courses of particular interest to students who have the flexibility to take them,. For this use-case, Skedge offers search, filter, and sorting features that substantially aid users in browsing through courses and discovering ones they might want to take. Note that none of the following features are supported by CDCS.
 
   \begin{enumerate}
 
