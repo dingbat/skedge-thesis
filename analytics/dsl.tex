@@ -3,7 +3,7 @@
 
 \subsection{Definitions}
 
-The \textbf{complexity} of a search query is the number of fields that aren't course number or department that it spans (the accepted fields are shown in Table \ref{fig:sc-fields}).
+The \textbf{complexity} of a search query is the number of fields that aren't \emph{course number} or \emph{department} that it spans. The accepted fields are shown in the following table:
 
 \singlespacing
 \begin{center}
@@ -32,7 +32,7 @@ The \textbf{complexity} of a search query is the number of fields that aren't co
 
   \end{tabular}
   \vspace{10pt}
-  \caption{``Complex'' search fields (omits only number and department)}
+  \caption{``Complex'' search fields (omits only \emph{number} and \emph{department})}
   \label{fig:sc-fields}
 \end{table}
 \end{center}
@@ -44,7 +44,7 @@ A user's \textbf{first increase in search complexity} is defined as the number o
 
 A user's \textbf{second increase in search complexity} is defined as the number of searches a user made before searching with complexity greater than their \emph{first increase}'s search complexity.
 
-It is possible that user have neither, both, or only a \emph{first increase} metric.
+It is possible that a user has neither metric, both metrics, or only a \emph{first increase} metric.
 
 {\renewcommand{\arraystretch}{2.0}
 \singlespacing
@@ -107,7 +107,7 @@ The purpose of this metric is to determine the usability and learning curve of S
 
   \item  from embedded links on the site making searches with high complexity and implicitly demonstrating them to users by using the same input field they use to submit searches.\footnote{Clicking on an instructor's name, for instance, makes the advanced search ``for the user.'' Another example is clicking on a course box in the side schedule, which searches for that course code along with its term and year (e.g. ``{\tt CSC 171 Fall 2016}'').
 
-  Other possibilities include linking the credits field of each course to a credits search, the CRN field of a section to a CRN search, the ``{\tt W}'' part of the course code to an upper-level writing search, having a crosslisted course link search the crosslisting of the two departments (instead of directly link to the crosslisted course), a ``feeling lucky?'' button for a search with ``{\tt random}''.}
+  Other possibilities include linking the credits field of each course to a credits search, the CRN field of a section to a CRN search, the ``{\tt W}'' part of the course code to an upper-level writing search, having a crosslisted course link search the crosslisting of the two departments (instead of directly link to the crosslisted course), or a ``feeling lucky?'' button for a search with ``{\tt random}''.}
 \end{enumerate}
 
 \begin{figure}[H]
@@ -136,7 +136,7 @@ A \emph{high} percentage of users with \emph{first increase} and \emph{second in
 
 The blue line in Figure \ref{fig:sc-graph} plots the number of users that had their \emph{first increase} in search complexity per search index (searches \#16--\#25 represent 47 users, and 26+ searches represents only 29 users). The green line plots the number of users for a \emph{second increase} at the given search index (searches \#16--\#25 represent 35 users, and 26+ searches represents 32).
 
-The amount of users whose first searches are of nonzero complexity may be surprising. The vast majority of these are \textbf{title} searches however, which \emph{are} included in the ``complex'' field table. This is purposeful---title searches only represent 8\% of all search field uses, as we saw in Figure \ref{fig:searchtypes} of the section before last. Moreover, a user's understanding and/or intuition that the Skedge search field is free-form and can be used for different search fields simultaneously is already a significant conceptualization of SkedgeQL, albeit a relatively basic field.
+The amount of users whose first searches are of nonzero complexity may be surprising. The vast majority of these are \textbf{title} searches however, which \emph{are} included in the ``complex'' field table. This is purposeful---title searches only represent 8\% of all search field uses, as we saw in Figure \ref{fig:searchtypes} of the section before last. Moreover, a user's understanding and/or intuition that the Skedge search field is free-form and can be used for different search fields simultaneously is already a significant conceptualization of SkedgeQL, albeit for a relatively basic search type.
 
 \subsubsection{Users with increases vs. users without increases}
 

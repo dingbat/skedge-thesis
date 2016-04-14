@@ -23,11 +23,11 @@ The disadvantage of the cookie-based system is that each new browser or device i
 
 Out of respect for privacy and a preference to \emph{not} store sensitive data, Skedge does not keep or store any Facebook data, not even users' names or lists of friends, the two pieces of data Skedge requests access to during the integration process. Skedge only stores an anonymous ID (uniquely generated for Skedge by Facebook) per account. Only a user’s name and list of friends also using Skedge are accessible via this ID, and Skedge doesn't store this in its database---both are retrieved exclusively by the client, and making separate requests that ask whether any given users (i.e. peers) are taking certain classes, etc., and for when displaying the schedule feed.
 
-Course \emph{likes} are also entirely locally stored and have nothing to do with Facbeook---Skedge merely uses the same concept and a similar icon for its own feature. Comments on courses are not currently supported, although Facebook-integrated comments would be possible.
+Course \emph{likes} are also entirely locally stored and have nothing to do with Facebook---Skedge merely uses the same concept and a similar icon for its own feature. Comments on courses are not currently supported, although Facebook-integrated comments would be possible.
 
 \section{Usage data collection}
 
-As the saying goes, ``if it's not monitored, it's not in production'' (how else would we know that it's truly live?) \cite{monitored}.
+As the saying goes, ``if it's not monitored, it's not in production'' (how else would we know if it's really live?) \cite{monitored}.
 
 Skedge collects usage data that is anonymous with regards to who a specific user is (because that information is not even known or stored), but that is not anonymous with respect to a trackable user ID. Keeping track of certain properties across users is very important for the data analysis in Sections 4.2 and 4.3. This tracking is done by the open-source library \emph{Ahoy}, which also has a JavaScript library to log click events unobtrusively and efficiently (e.g. send them after the page has been loaded) using cookies. Note that this has nothing to do with advertisement tracking that is done by marketing agencies across the web---this tracking is entirely local to Skedge and Skedge does not advertise in any way.
 
