@@ -31,7 +31,7 @@ Figure \ref{fig:navs-combined} shows the navigations-per-add breakdown for every
 
 Considering the hypothesis claimed in Section 2.3.2 (that course selection criteria can be broken down to \emph{requirements}, \emph{electives}, and \emph{peer recommendations}), however, we ought examine if data for different use-cases are being conflated in this chart.
 
-\subsection{Direct search (requirement criteria)}
+\subsection{Direct search (required courses)}
 
   \begin{figure}
     \centering
@@ -43,13 +43,13 @@ Considering the hypothesis claimed in Section 2.3.2 (that course selection crite
 
   Direct searches are easy to distinguish, as we can take the subset of search queries that target a specific course, namely, those that \textbf{a)} contain both department and course code fields (e.g. ``{\tt csc 171}''), or \textbf{b)} contain a title field (``{\tt intro to programming}''). Figure \ref{fig:navs-direct} shows the navigations-per-add when, under this criteria, the user's goal was to add a specific course.
 
-  The difference between these results and those in \ref{fig:navs-combined} is suble but logical. Users searching for a specific course should have an increased proportion of 1-navigation adds, as the graph shows, because the use-case is \emph{search for course}, \emph{add course}, perhaps occasionally taking an extra try to account for typos, not knowing the title or course code exactly, etc.
+  The difference between these results and those in Figure \ref{fig:navs-combined} is subtle but logical. Users searching for a specific course should have an increased proportion of 1-navigation adds, as the graph shows, because the use-case is ``\emph{search for course}'' followed by ``\emph{add course}'', perhaps occasionally taking an extra try to account for typos, etc.
 
-  But given this reasoning, why would 0-navigation adds still be so common in direct searches? Further analysis on only the sections that were added from direct search and with 0 navigations shows that 64\% of those sections are in fact \emph{subsections}. As happened in the illustrative example at the beginning of this section, this shows that a very common use-case is to add labs, workshops, etc. of a course directly after adding the main section.
+  But given this reasoning, why would 0-navigation adds still be so common in direct searches? Further analysis on sections added from 0 navigations (from direct search) shows that 64\% of those sections were in fact \emph{subsections}. As was illustrated in the example at the beginning of this section, this demonstrates the very common use-case of adding labs, workshops, etc. of a course directly after adding the main section when directly searching.
 
-  This hypothesis is further confirmed by doing the same analysis for ${navs}=1$ and ${navs}=2$, when the inverse behavior would be expected (it makes sense for subsections which were added seperately from their main sections to be more rate). Only 11\% of sections that were added from a direct search after 1 navigation are subsections, and that number drops to 8\% for 2 navigations.
+  This hypothesis is further confirmed by doing the same analysis for ${navs}=1$ and ${navs}=2$, when the inverse behavior would be expected (it makes sense for subsections which were added seperately from their main sections to be more rare). Only 11\% of sections that were added from a direct search after 1 navigation were subsections, and that number drops to 8\% for 2 navigations.
 
-\subsection{Browse (elective criteria)}
+\subsection{Browse (elective courses)}
 
   \begin{figure}
     \centering
@@ -65,6 +65,6 @@ Considering the hypothesis claimed in Section 2.3.2 (that course selection crite
 
   As expected, and unlike the results of further direct-search analysis, the sections added/bookmarked when browsing within 0 navigations were mostly \emph{main} sections (only 37\% of them were subsections). This makes sense, as users may not be concerned with subsections if the goal of the browse is merely to mark interesting courses. This criterion saw more drastic drops in subsection amounts as well, as the number of navigations increased: 5\% subsections for ${navs}=1$, and 4\% subsections for ${navs}=2$.
 
-\subsection{Peer-guided (recommendation criteria)}
+\subsection{Peer-guided (recommended courses)}
 
   Given more time with Skedge Social being live and more forethought in tracking its usage, similar data analysis could be done on the subject of the effectiveness of Skedge in peer-guided course finding. Unfortunately, usage data to answer questions such as ``how many Facebook friends were listed as liking or taking a course when it was added?'' was not tracked, and cannot be retroactively computed due to Skedge's purposeful privacy limitations (Facebook friend data can only be retrieved client-side---no data is stored on the server that could authorize such a data request). Thus, part (c) of hypothesis \#2 cannot be verified.
